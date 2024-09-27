@@ -2,8 +2,10 @@
 
 document.addEventListener('DOMContentLoaded', ()=>{
   const header = document.querySelector('.header');
+  const closeAllPopups = document.querySelector('.closeAllPopups')
+  const popups = document.querySelectorAll('.popup')
+  const headerMenuBtn = header.querySelector('.header_menu_button');
   if(header) {
-    const headerMenuBtn = header.querySelector('.header_menu_button');
     const headerBottomMenuBtn = header.querySelector('.have-child');
     const headerCityInput = header.querySelector('.header_left_select');
     if(headerMenuBtn) {
@@ -13,10 +15,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
           headerMenuBtn.classList.add('open')
           headerMenuBtn.classList.remove('close')
           header.classList.add('active')
+          document.querySelector('html').classList.add('noScroll')
+          closeAllPopups.classList.add('active')
         } else if(!headerMenuBtn.classList.contains('close')) {
           headerMenuBtn.classList.remove('open')
           headerMenuBtn.classList.add('close')
           header.classList.remove('active')
+          document.querySelector('html').classList.remove('noScroll')
+          closeAllPopups.classList.remove('active')
 
         }
       }
@@ -41,6 +47,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
         headerCityInput.classList.remove('active')
 
       })
+    }
+  }
+  if(closeAllPopups) {
+    closeAllPopups.onclick = ()=>{
+      for(let i = 0; popups.length > i; i ++) {
+        popups[i].classList.remove('active')
+      }
+      headerMenuBtn.classList.add('close')
+      headerMenuBtn.classList.remove('open')
+      closeAllPopups.classList.remove('active')
+      document.querySelector('html').classList.remove('noScroll')
     }
   }
 })
