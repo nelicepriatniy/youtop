@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
       document.querySelector('html').classList.remove('noScroll')
     }
   }
-})
 
 //работа табов в блоке с табами 
 
@@ -83,6 +82,126 @@ if(tabBlock) {
         tabsRight.append(tabList)
       }
     }
+  }
+}
+
+//работа вопросов
+
+const faqBlock = document.querySelector('.FaQ')
+
+if(faqBlock) {
+  const faqList = faqBlock.querySelectorAll('.faq-item');
+
+  if(faqList.length > 0) {
+    for(let i = 0; faqList.length > i; i++) {
+      faqList[i].onclick = ()=>{
+        faqList[i].classList.toggle('active')
+      }
+    }
+  }
+}
+
+//работа кнопки "показать ещё" в блоке продвижения
+
+const prodvBlock = document.querySelector('.prodv');
+
+if(prodvBlock) {
+  const prodvList = prodvBlock.querySelectorAll('.prodv-item');
+  const prodvBtn = prodvBlock.querySelector('.prov-next-button')
+  if(prodvList.length < 24) {
+    prodvBtn.classList.add('noActive')
+    for(let i = 0; prodvList.length > i; i++) {
+      prodvList[i].classList.add('visual')
+    }
+  } else {
+    let indexVisual = 24;
+    for(let i = 0; indexVisual > i; i++) {
+      prodvList[i].classList.add('visual')
+      prodvBtn.onclick = ()=>{
+        if((indexVisual + 6) < prodvList.length) {
+          indexVisual = indexVisual + 6;
+          for(let o = 0; indexVisual > o; o++ ) {
+            prodvList[o].classList.add('visual')
+          }
+        } else {
+          indexVisual = indexVisual + (prodvList.length - indexVisual);
+          for(let o = 0; indexVisual > o; o++ ) {
+            prodvList[o].classList.add('visual')
+          }
+          prodvBtn.classList.add('noActive')
+        }
+      }
+    }
+  }
+}
+
+//работа кнопки "показать ещё" в блоке видео
+
+const videosBlock = document.querySelector('.videos');
+
+if(prodvBlock) {
+  const videosList = videosBlock.querySelectorAll('.video-item');
+  const videosBtn = videosBlock.querySelector('.prov-next-button')
+  if(videosList.length < 6) {
+    videosBtn.classList.add('noActive')
+    for(let i = 0; videosList.length > i; i++) {
+      videosList[i].classList.add('active')
+    }
+  } else {
+    let indexVisual = 6;
+    for(let i = 0; indexVisual > i; i++) {
+      videosList[i].classList.add('active')
+      videosBtn.onclick = ()=>{
+        if((indexVisual + 3) < videosList.length) {
+          indexVisual = indexVisual + 3;
+          for(let o = 0; indexVisual > o; o++ ) {
+            videosList[o].classList.add('active')
+          }
+        } else {
+          indexVisual = indexVisual + (videosList.length - indexVisual);
+          for(let o = 0; indexVisual > o; o++ ) {
+            videosList[o].classList.add('active')
+          }
+          videosBtn.classList.add('noActive')
+        }
+      }
+    }
+  }
+}
+
+//работа скрытого меню в футере
+
+const footer = document.querySelector('.footer')
+
+if(footer) {
+  const footerBtn = footer.querySelector('.footer-menu-item.more')
+  const footerHiddenMenu = footer.querySelector('.footer-hidden')
+  footerBtn.onclick = ()=>{
+    footerHiddenMenu.classList.toggle('active')
+    footerBtn.classList.toggle('active')
+  }
+
+}
+
+//вызов модалки с формой
+
+const modalForm = document.querySelector('.form-popup')
+
+if(modalForm) {
+  const formModalBtns = document.querySelectorAll('.form-btn')
+  const formModalClose = modalForm.querySelector('.form-poopup-close-svg')
+  for(let i = 0; formModalBtns.length > i; i++) {
+    formModalBtns[i].onclick =()=>{
+      modalForm.classList.add('active')
+      closeAllPopups.classList.add('active')
+      document.querySelector('html').classList.add('noScroll')
+    }
+  }
+  formModalClose.onclick = ()=>{
+    modalForm.classList.remove('active')
+    closeAllPopups.classList.remove('active')
+    document.querySelector('html').classList.remove('noScroll')
+
   }
 }
 
@@ -128,3 +247,4 @@ const videoRevSlider = new Swiper('.video-rev-slider', {
     el: '.video-rev-paggination'
   }
 });
+})
