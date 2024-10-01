@@ -61,3 +61,70 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
   }
 })
+
+//работа табов в блоке с табами 
+
+const tabBlock = document.querySelector('.tabs');
+
+if(tabBlock) {
+  const tabs = tabBlock.querySelectorAll('.tabs-l-item');
+  const tabsRight = tabBlock.querySelector('.tabs-r');
+  let tabList = `<p class="Text_20">Ошибка</p>`;
+  if(tabs.length > 0) {
+    for(let i = 0; tabs.length > i; i++) {
+      tabs[i].onclick = ()=>{
+        for(let o = 0; tabs.length > o; o++) {
+          tabs[o].classList.remove('active')
+        }
+        tabs[i].classList.add('active')
+
+        tabList = tabs[i].querySelector('.tabs-l-inv-list').cloneNode(true);
+        tabsRight.innerHTML = ''
+        tabsRight.append(tabList)
+      }
+    }
+  }
+}
+
+//слайдер кейсов слайдера 
+
+const keysSlider = new Swiper('.ya-keys-swiper', {
+  speed: 400,
+  spaceBetween: 100,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.ya-keys-next',
+    prevEl: '.ya-keys-prev'
+  }
+});
+
+//слайдер калькулятора квиза
+
+const calkSlider = new Swiper('.calkulator-swiper', {
+  speed: 400,
+  spaceBetween: 100,
+  slidesPerView: 1,
+  allowTouchMove: false,
+  autoHeight: true,
+  navigation: {
+    nextEl: '.calk-left-next',
+  },
+  pagination: {
+    el: '.calk-left-pag'
+  }
+});
+
+//слайдер видеоотзывов
+
+const videoRevSlider = new Swiper('.video-rev-slider', {
+  speed: 400,
+  spaceBetween: 40,
+  slidesPerView: 3,
+  navigation: {
+    nextEl: '.video-arr-next',
+    prevEl: '.video-arr-prev'
+  },
+  pagination: {
+    el: '.video-rev-paggination'
+  }
+});
