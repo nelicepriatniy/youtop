@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerCityInput = header.querySelector('.header_left_select');
     if (headerMenuBtn) {
       headerMenuBtn.onclick = () => {
-        console.log(123);
         if (headerMenuBtn.classList.contains('close')) {
           headerMenuBtn.classList.add('open')
           headerMenuBtn.classList.remove('close')
@@ -242,15 +241,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // раскрытие текста в about me
 
     const readMoreBtn = document.querySelector('.about-me .read-next')
-    readMoreBtn.onclick = ()=>{
-      document.querySelector('.about-me_info_heading.mobile').classList.toggle('more')
-      readMoreBtn.classList.toggle('open')
-      if(!readMoreBtn.classList.contains('open')) {
-        readMoreBtn.querySelector('.read-next-text').innerHTML = 'Читать дальше'
-      } else {
-        readMoreBtn.querySelector('.read-next-text').innerHTML = 'Свернуть'
+    if(readMoreBtn) {
+      readMoreBtn.onclick = ()=>{
+        document.querySelector('.about-me_info_heading.mobile').classList.toggle('more')
+        readMoreBtn.classList.toggle('open')
+        if(!readMoreBtn.classList.contains('open')) {
+          readMoreBtn.querySelector('.read-next-text').innerHTML = 'Читать дальше'
+        } else {
+          readMoreBtn.querySelector('.read-next-text').innerHTML = 'Свернуть'
+        }
       }
+
     }
+
+    //работа табов в кейсах в мобилке на главной
 
     const yaKekyses = document.querySelectorAll('.ya-keys-item');
 
@@ -284,6 +288,123 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  //работа фильтров на странице кейсов
+
+  let filterBlock = document.querySelector('.keyses-filters');
+
+  if(filterBlock) {
+    const filters = filterBlock.querySelectorAll('.keyses-filter-item');
+    const keyses = document.querySelector('.keyses-wrapper').querySelectorAll('.keyses-item');
+    const pageTitle = document.querySelector('.keyses-heading');
+    for(let j = 0; keyses.length > j; j++) {
+      keyses[j].classList.add('active')
+
+      const tabs = keyses[j].querySelectorAll('.keys-item-tabs_tab');
+      const tabsItems = keyses[j].querySelectorAll('.keyses-item-tab-block');
+
+      //работа табов в итеме кейса
+      
+      for(let i = 0; tabs.length > i; i++) {
+        tabs[i].onclick = ()=>{
+          for(let m = 0; tabs.length > m; m++) {
+            tabs[m].classList.remove('active')
+          }
+          tabs[i].classList.add('active')
+          for(let o = 0; tabsItems.length > o; o++) {
+            if(tabsItems[o].getAttribute('data-tab') == tabs[i].textContent) {
+              tabsItems[o].classList.add('active')
+            } else if(tabsItems[o].getAttribute('data-tab') != tabs[i].textContent) {
+              tabsItems[o].classList.remove('active')
+            } else {
+              return 0
+            }
+          }
+        }
+      }
+
+
+      
+    }
+    if(filters.length > 0) {
+      for(let i = 0; filters.length > i; i++) {
+        filters[i].onclick = ()=>{
+          
+          for(let j = 0; filters.length > j; j++) {
+            filters[j].classList.remove('active')
+          }
+          filters[i].classList.add('active')
+          if(filters[i].innerHTML != 'Все') {
+            pageTitle.innerHTML = filters[i].textContent
+            if(keyses.length > 0) {
+              for(let j = 0; keyses.length > j; j++) {
+                if(keyses[j].getAttribute('data-filter') === filters[i].innerHTML) {
+                  keyses[j].classList.add('active')
+                } else if(keyses[j].getAttribute('data-filter') != filters[i].innerHTML) {
+                  keyses[j].classList.remove('active')
+                } else {
+                  return 0
+                }
+              }
+            }
+          } else if(filters[i].innerHTML == 'Все') {
+            pageTitle.innerHTML = 'Результаты наших клиентов'
+            for(let j = 0; keyses.length > j; j++) {
+              keyses[j].classList.add('active')
+            }
+          } else {
+            return 0
+          }
+        }
+      }
+    }
+  }
+
+  //работа кнопки "Показать ещё" на странице кейсов
+
+  const keysesBlock = document.querySelector('.keyses');
+
+  if(keysesBlock) {
+    if(window.innerWidth < 1279) {
+      const moreBtn = keysesBlock.querySelector('.keyses-more-modil');
+      const keysesList = keysesBlock.querySelectorAll('.keyses-item');
+      let indexOfVisualKeys = 4,
+          moveFor = 2;
+          for(let i = 0; indexOfVisualKeys > i ;i++) {
+            keysesList[i].classList.add('visual')
+          }
+
+      moreBtn.onclick = ()=>{
+        if(keysesList.length <= indexOfVisualKeys) {
+          for(let i = 0; keysesList.length > i ;i++) {
+            keysesList[i].classList.add('visual')
+          }
+        } else if(keysesList.length > indexOfVisualKeys) {
+          if(keysesList.length >= indexOfVisualKeys + moveFor) {
+            indexOfVisualKeys = indexOfVisualKeys + moveFor
+            for(let i = 0 ; indexOfVisualKeys > i ; i++) {
+              keysesList[i].classList.add('visual')
+            }
+          } else if (keysesList.length < indexOfVisualKeys + moveFor) {
+            indexOfVisualKeys = indexOfVisualKeys +((indexOfVisualKeys + moveFor) -  keysesList.length);
+            console.log(indexOfVisualKeys);
+            for(let i = 0 ; indexOfVisualKeys > i ; i++) {
+              keysesList[i].classList.add('visual')
+            }
+            moreBtn.classList.add('notActive')
+          }
+          else {
+            return 0
+          }
+        }
+        else {
+          return 0
+        }
+      }
+
+    }
+  }
+  
+  
   //слайдер кейсов слайдера 
 
   const keysSlider = new Swiper('.ya-keys-swiper', {
@@ -322,14 +443,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   if(window.innerWidth < 1160) {
+
     const nowYaKeys = document.querySelector('.schet-now-ya-keys')
-    const allYaKeys = document.querySelector('.schet-all-ya-keys')
-    const allYaKeyses = document.querySelectorAll('.ya-keys-swiper .swiper-slide')
-    allYaKeys.innerHTML = allYaKeyses.length
-    keysSlider.on('slideChangeTransitionStart', ()=>{
-      nowYaKeys.innerHTML = keysSlider.activeIndex + 1
-    })
-    keysSlider.init();
+    if(nowYaKeys) {
+      const allYaKeys = document.querySelector('.schet-all-ya-keys')
+      const allYaKeyses = document.querySelectorAll('.ya-keys-swiper .swiper-slide')
+      allYaKeys.innerHTML = allYaKeyses.length
+      keysSlider.on('slideChangeTransitionStart', ()=>{
+        nowYaKeys.innerHTML = keysSlider.activeIndex + 1
+      })
+      keysSlider.init();
+    }
   }
 
   //слайдер калькулятора квиза
