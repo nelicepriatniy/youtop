@@ -403,6 +403,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
   }
+
+  //присвоение белого класса к хлебным крошкам при имеющемся блоке
+  
+  const isWhiteBlock = document.querySelector('.white-bread');
+  if(isWhiteBlock) {
+    
+    const bred = document.querySelector('.bred-path');
+    if(bred) {
+      bred.classList.add('white')
+    }
+  }
+
   
   
   //слайдер кейсов слайдера 
@@ -502,5 +514,26 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 40
       }
     }
+  });
+
+  //слайдер до и после на странице кейса
+
+  const sPositionSlider = new Swiper('.s-position-slider', {
+    speed: 400,
+    slidesPerView: 2,
+    navigation: {
+      nextEl: '.s-position-arr-next',
+      prevEl: '.s-position-arr-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      1279: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+    },
   });
 })
