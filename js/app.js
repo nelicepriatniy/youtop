@@ -415,6 +415,178 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  //работа формы в попапе
+
+  const popupForm = document.querySelector('.popup.form-popup')
+
+  if(popupForm) {
+    const popupFormPhone = popupForm.querySelector('.phone')
+    const popupFormAdress = popupForm.querySelector('.syte-addres')
+    const popupFormcheckpoint = popupForm.querySelector('#form-popup-policy')
+    const popupFormSend = popupForm.querySelector('.form-popup-button');
+
+    const tyPopup = document.querySelector('.ty-popup')
+    const tyPopupBtn = tyPopup.querySelector('.ty-popup-button');
+
+    popupFormSend.onclick = ()=>{
+      if(popupFormPhone.value != '' && popupFormAdress.value != "") {
+        popupFormPhone.classList.remove('red-flag')
+        popupFormAdress.classList.remove('red-flag')
+        if(popupFormcheckpoint.checked) {
+          tyPopup.classList.add('active')
+          popupFormcheckpoint.classList.remove('red-check')
+          //здесь код аякса будет
+        } else {
+          popupFormcheckpoint.classList.add('red-check')
+          tyPopup.classList.remove('active')
+        }
+      } else if(popupFormPhone.value == '' || popupFormAdress.value == "") {
+        if(popupFormPhone.value == '' && popupFormAdress.value == "") {
+          popupFormPhone.classList.add('red-flag')
+          popupFormAdress.classList.add('red-flag')
+        } else if(popupFormAdress.value == "") {
+          popupFormAdress.classList.add('red-flag')
+          popupFormPhone.classList.remove('red-flag')
+        } else if(popupFormPhone.value == "") {
+          popupFormPhone.classList.add('red-flag')
+          popupFormAdress.classList.remove('red-flag')
+        }
+      }
+    } 
+
+    tyPopupBtn.onclick = ()=>{
+      tyPopup.classList.remove('active')
+    }
+  }
+
+  //работа формы в яндекс отзывах 
+
+  
+  const YarevForm = document.querySelector('.ya-rev-r')
+
+  if(YarevForm) {
+    const popupFormPhone = YarevForm.querySelector('.phone')
+    const popupFormAdress = YarevForm.querySelector('.syte-addres')
+    const popupFormcheckpoint = YarevForm.querySelector('#ya-rev-policy-checkbox')
+    const popupFormSend = YarevForm.querySelector('.ya-rev-form-button');
+
+    const tyPopup = document.querySelector('.ty-popup')
+    const tyPopupBtn = tyPopup.querySelector('.ty-popup-button');
+
+    popupFormSend.onclick = ()=>{
+      if(popupFormPhone.value != '' && popupFormAdress.value != "") {
+        popupFormPhone.classList.remove('red-flag')
+        popupFormAdress.classList.remove('red-flag')
+        if(popupFormcheckpoint.checked) {
+          tyPopup.classList.add('active')
+          popupFormcheckpoint.classList.remove('red-check')
+          //здесь код аякса будет
+        } else {
+          popupFormcheckpoint.classList.add('red-check')
+          tyPopup.classList.remove('active')
+        }
+      } else if(popupFormPhone.value == '' || popupFormAdress.value == "") {
+        if(popupFormPhone.value == '' && popupFormAdress.value == "") {
+          popupFormPhone.classList.add('red-flag')
+          popupFormAdress.classList.add('red-flag')
+        } else if(popupFormAdress.value == "") {
+          popupFormAdress.classList.add('red-flag')
+          popupFormPhone.classList.remove('red-flag')
+        } else if(popupFormPhone.value == "") {
+          popupFormPhone.classList.add('red-flag')
+          popupFormAdress.classList.remove('red-flag')
+        }
+      }
+    } 
+
+    tyPopupBtn.onclick = ()=>{
+      tyPopup.classList.remove('active')
+    }
+  }
+
+  //работа формы в этапах
+  const etapsForm = document.querySelector('.etaps-item-form')
+
+  if(etapsForm) {
+    const popupFormPhone = etapsForm.querySelector('.phone')
+    const popupFormcheckpoint = etapsForm.querySelector('#etaps-form-polytic')
+    const popupFormSend = etapsForm.querySelector('.etaps-form_btn');
+
+    const tyPopup = document.querySelector('.ty-popup')
+    const tyPopupBtn = tyPopup.querySelector('.ty-popup-button');
+
+    popupFormSend.onclick = ()=>{
+      if(popupFormPhone.value != '') {
+        popupFormPhone.classList.remove('red-flag')
+        if(popupFormcheckpoint.checked) {
+          tyPopup.classList.add('active')
+          popupFormcheckpoint.classList.remove('red-check')
+          //здесь код аякса будет
+        } else {
+          popupFormcheckpoint.classList.add('red-check')
+          tyPopup.classList.remove('active')
+        }
+      } else if(popupFormPhone.value == '') {
+        if(popupFormPhone.value == '') {
+          popupFormPhone.classList.add('red-flag')
+        } else if(popupFormPhone.value == "") {
+          popupFormPhone.classList.add('red-flag')
+        }
+      }
+    } 
+
+    tyPopupBtn.onclick = ()=>{
+      tyPopup.classList.remove('active')
+    }
+  }
+
+  //работа формы в блоке с формой 
+
+  const prodvigForm = document.querySelector('.prodvig-form')
+
+  if(prodvigForm) {
+    const popupFormPhone = prodvigForm.querySelector('.phone')
+    const popupFormAdress = prodvigForm.querySelector('.syte-addres')
+    let popupFormcheckpoint = prodvigForm.querySelector('#prodvig-form-checkbox-desk')
+    const popupFormSend = prodvigForm.querySelector('.prodvig-send-btn');
+    if(window.innerWidth < 1024) {
+      popupFormcheckpoint = prodvigForm.querySelector('#prodvig-form-checkbox-mob')
+    }
+
+    const tyPopup = document.querySelector('.ty-popup')
+    const tyPopupBtn = tyPopup.querySelector('.ty-popup-button');
+
+    popupFormSend.onclick = ()=>{
+      if(popupFormPhone.value != '' && popupFormAdress.value != "") {
+        popupFormPhone.classList.remove('red-flag')
+        popupFormAdress.classList.remove('red-flag')
+        if(popupFormcheckpoint.checked) {
+          tyPopup.classList.add('active')
+          popupFormcheckpoint.classList.remove('red-check')
+          //здесь код аякса будет
+        } else {
+          popupFormcheckpoint.classList.add('red-check')
+          tyPopup.classList.remove('active')
+        }
+      } else if(popupFormPhone.value == '' || popupFormAdress.value == "") {
+        if(popupFormPhone.value == '' && popupFormAdress.value == "") {
+          popupFormPhone.classList.add('red-flag')
+          popupFormAdress.classList.add('red-flag')
+        } else if(popupFormAdress.value == "") {
+          popupFormAdress.classList.add('red-flag')
+          popupFormPhone.classList.remove('red-flag')
+        } else if(popupFormPhone.value == "") {
+          popupFormPhone.classList.add('red-flag')
+          popupFormAdress.classList.remove('red-flag')
+        }
+      }
+    } 
+
+    tyPopupBtn.onclick = ()=>{
+      tyPopup.classList.remove('active')
+    }
+  }
+
   
   
   //слайдер кейсов слайдера 

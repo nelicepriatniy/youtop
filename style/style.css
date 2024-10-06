@@ -1655,6 +1655,9 @@ body.noScroll, html.noScroll {
   border: 1px solid #3e3e3e;
   border-radius: 2px;
 }
+.calk-left-item-checkbox-wrapper.small .calk-checkbox.red-check + .calk-checkbox-visual {
+  border: 1px solid #e92b2b;
+}
 .calk-left-item-checkbox-wrapper.small .calk-checkbox-visual {
   border: 1px solid #3e3e3e;
   border-radius: 2px;
@@ -1906,6 +1909,21 @@ body.noScroll, html.noScroll {
 .ya-rev-form-input:first-child {
   margin-top: 0;
 }
+.ya-rev-form-input.red-flag {
+  border: 1px solid #e92b2b;
+  border-radius: 8px;
+  padding: 16px 24px;
+  color: #e92b2b;
+}
+.ya-rev-form-input.red-flag + .red-flag-text {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #e92b2b;
+  font-family: "Manrope", sans-serif;
+  margin-top: 10px;
+}
 
 .ya-rev-form-policy {
   margin-top: 8px;
@@ -1921,6 +1939,9 @@ body.noScroll, html.noScroll {
 }
 .ya-rev-policy-checkbox:checked + .ya-form-checkbox-visual .ya-form-checkbox-visual-svg {
   opacity: 1;
+}
+.ya-rev-policy-checkbox.red-check + .ya-form-checkbox-visual {
+  border: 1px solid #e92b2b;
 }
 
 .ya-form-checkbox-visual {
@@ -2269,6 +2290,22 @@ body.noScroll, html.noScroll {
   font-size: 18px;
   line-height: 155%;
   color: #1c1625;
+}
+.etaps-form-inp.red-flag {
+  border: 1px solid #e92b2b;
+  border-radius: 8px;
+  padding: 16px 24px;
+  color: #e92b2b;
+}
+.etaps-form-inp.red-flag + .red-flag-text {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #e92b2b;
+  font-family: "Manrope", sans-serif;
+  margin-top: 10px;
+  width: 340px;
 }
 
 .etaps-form_btn {
@@ -2762,6 +2799,23 @@ body.noScroll, html.noScroll {
 .form-popup-inp:first-child {
   margin-top: 0;
 }
+.form-popup-inp.red-flag {
+  border: 1px solid #e92b2b;
+  color: #e92b2b;
+}
+.form-popup-inp.red-flag + .red-flag-text {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #e92b2b;
+  font-family: "Manrope", sans-serif;
+  margin-top: 10px;
+}
+
+.red-flag-text {
+  display: none;
+}
 
 .form-popup-button {
   width: 100%;
@@ -3097,6 +3151,10 @@ body.noScroll, html.noScroll {
 }
 .prodvig-form-inp:nth-child(2) {
   width: 340px;
+}
+.prodvig-form-inp.red-flag {
+  border: 1px solid #e92b2b;
+  color: #e92b2b;
 }
 
 .prodvig-send-btn {
@@ -3620,6 +3678,93 @@ body.noScroll, html.noScroll {
 .error-pluss-bg5 {
   top: 310px;
   right: 375px;
+}
+
+.ty-popup {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 100px);
+  z-index: 13;
+  background: #ffca00;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  transform: translateY(-200px);
+}
+.ty-popup .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 113px;
+}
+.ty-popup.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.ty-popup-svg {
+  width: 116px;
+  height: 116px;
+  margin-bottom: 48px;
+}
+
+.ty-popup-heading {
+  font-size: 70px;
+  line-height: 115%;
+  margin-bottom: 60px;
+}
+.ty-popup-heading::first-letter {
+  color: #F3002C;
+}
+
+.ty-popup-text {
+  margin-bottom: 35px;
+  opacity: 0.8;
+  color: #171717;
+}
+
+.ty-popup-button {
+  background: white;
+}
+
+.ty-popup-svg-bg1, .ty-popup-svg-bg2, .ty-popup-svg-bg3, .ty-popup-svg-bg4, .ty-popup-svg-bg5 {
+  position: absolute;
+}
+
+.ty-popup-svg-bg2, .ty-popup-svg-bg3, .ty-popup-svg-bg4, .ty-popup-svg-bg5 {
+  width: 34px;
+  height: 34px;
+}
+
+.ty-popup-svg-bg1 {
+  width: 60px;
+  height: 60px;
+  top: 375px;
+  left: 260px;
+}
+
+.ty-popup-svg-bg2 {
+  top: 440px;
+  left: 370px;
+}
+
+.ty-popup-svg-bg3 {
+  top: 390px;
+  right: 315px;
+}
+
+.ty-popup-svg-bg4 {
+  top: 430px;
+  right: 515px;
+}
+
+.ty-popup-svg-bg5 {
+  top: 500px;
+  right: 440px;
 }
 
 @media (max-width: 1160px) {

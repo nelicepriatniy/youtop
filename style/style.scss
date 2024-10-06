@@ -1563,6 +1563,11 @@ body, html {
                 border: 1px solid #3e3e3e;
                 border-radius: 2px;
             }
+            &.red-check {
+                & + .calk-checkbox-visual {
+                    border: 1px solid #e92b2b;
+                }
+            }
         }
         & .calk-checkbox-visual {
             border: 1px solid #3e3e3e;
@@ -1807,6 +1812,22 @@ body, html {
     &:first-child {
         margin-top: 0;
     }
+    &.red-flag {
+        border: 1px solid #e92b2b;
+        border-radius: 8px;
+        padding: 16px 24px;
+        color: #e92b2b;
+        & + .red-flag-text {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #e92b2b;
+            font-family: $font3;
+            margin-top: 10px;
+
+        }
+    }
 }
 .ya-rev-form-policy {
     margin-top: 8px;
@@ -1821,6 +1842,11 @@ body, html {
     &:checked + .ya-form-checkbox-visual {
         & .ya-form-checkbox-visual-svg {
             opacity: 1;
+        }
+    }
+    &.red-check {
+        & + .ya-form-checkbox-visual {
+            border: 1px solid #e92b2b;
         }
     }
 }
@@ -2162,6 +2188,23 @@ body, html {
     font-size: 18px;
     line-height: 155%;
     color: #1c1625;
+    &.red-flag {
+        border: 1px solid #e92b2b;
+        border-radius: 8px;
+        padding: 16px 24px;
+        color: #e92b2b;
+        & + .red-flag-text {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #e92b2b;
+            font-family: $font3;
+            margin-top: 10px;
+            width: 340px;
+
+        }
+    }
 }
 .etaps-form_btn {
     width: 100%;
@@ -2623,6 +2666,24 @@ body, html {
     &:first-child {
         margin-top: 0;
     }
+    &.red-flag {
+        border: 1px solid #e92b2b;
+        color: #e92b2b;
+        & + .red-flag-text {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #e92b2b;
+            font-family: $font3;
+            margin-top: 10px;
+
+        }
+
+    }
+}
+.red-flag-text {
+    display: none;
 }
 .form-popup-button {
     width: 100%;
@@ -2941,6 +3002,10 @@ body, html {
     }
     &:nth-child(2) {
         width: 340px;
+    }
+    &.red-flag {
+        border: 1px solid #e92b2b;
+        color: #e92b2b;
     }
 }
 .prodvig-send-btn {
@@ -3427,6 +3492,92 @@ body, html {
 .error-pluss-bg5 {
     top: 310px;
     right: 375px;
+}
+
+.ty-popup {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 100px);
+    z-index: 13;
+    background: $main;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+    transform: translateY(-200px);
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 113px;
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+.ty-popup-svg {
+    width: 116px;
+    height: 116px;
+    margin-bottom: 48px;
+}
+.h1 {
+}
+.ty-popup-heading {
+    font-size: 70px;
+    line-height: 115%;
+    &::first-letter {
+        color: $seondarcy1;
+    }
+    margin-bottom: 60px;
+}
+.Big_Text {
+}
+.ty-popup-text {
+    margin-bottom: 35px;
+    opacity: 0.8;
+    color: #171717;
+}
+.button {
+}
+.ty-popup-button {
+    background: $white;
+}
+.button_svg {
+}
+
+.ty-popup-svg-bg1, .ty-popup-svg-bg2, .ty-popup-svg-bg3, .ty-popup-svg-bg4, .ty-popup-svg-bg5 {
+    position: absolute;
+}
+.ty-popup-svg-bg2, .ty-popup-svg-bg3, .ty-popup-svg-bg4, .ty-popup-svg-bg5 {
+    width: 34px;
+    height: 34px;
+}
+
+.ty-popup-svg-bg1 {
+    width: 60px;
+    height: 60px;
+    top: 375px;
+    left: 260px;
+}
+.ty-popup-svg-bg2 {
+    top: 440px;
+    left: 370px;
+}
+.ty-popup-svg-bg3 {
+    top: 390px;
+    right: 315px;
+}
+.ty-popup-svg-bg4 {
+    top: 430px;
+    right: 515px;
+}
+.ty-popup-svg-bg5 {
+    top: 500px;
+    right: 440px;
 }
 
 @media(max-width: 1160px) {
