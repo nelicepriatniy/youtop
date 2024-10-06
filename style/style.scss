@@ -3371,6 +3371,64 @@ body, html {
     color: $text-black-500;
 }
 
+.error {
+    background: $bg-black;
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.error-bg {
+    width: 449px;
+    height: 175px;
+    margin-bottom: 60px;
+}
+.Text_24 {
+}
+.error-text {
+    opacity: 0.8;
+    color: $white;
+    margin-bottom: 40px;
+    max-width: 615px;
+}
+
+.error-pluss-bg1, .error-pluss-bg2, .error-pluss-bg3, .error-pluss-bg4, .error-pluss-bg5 {
+    position: absolute;
+}
+.error-pluss-bg2, .error-pluss-bg3, .error-pluss-bg4, .error-pluss-bg5 {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+}
+
+.error-pluss-bg1 {
+    top: 314px;
+    left: 260px;
+    width: 60px;
+    height: 60px;
+}
+.error-pluss-bg2 {
+    top: 396px;
+    left: 371px;
+}
+.error-pluss-bg3 {
+    top: 201px;
+    right: 252px;
+}
+.error-pluss-bg4 {
+    top: 239px;
+    right: 449px;
+}
+.error-pluss-bg5 {
+    top: 310px;
+    right: 375px;
+}
+
 @media(max-width: 1160px) {
     .desk {
         display: none;
@@ -4029,6 +4087,10 @@ body, html {
     .a-pred .section-header {
         margin-bottom: 60px;
     }
+    .error-pluss-bg1, .error-pluss-bg2, .error-pluss-bg3, .error-pluss-bg4, .error-pluss-bg5 {
+        display: none;
+    }
+    
 }
 
 @media (max-width: 639px) {
@@ -5009,5 +5071,18 @@ body, html {
         path {
             fill: $white;
         }
+    }
+    .error {
+        margin-top: 88px;
+        height: calc(100vh - 88px);
+    }
+    .error-bg {
+        width: 260px;
+        height: 101px;
+    }
+    .error-text {
+        font-size: 16px;
+        line-height: 145%;
+        text-align: center;
     }
 }
