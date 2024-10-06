@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header popup">
+    <div class="container header-top">
+      <div class="header_left">
+        <div class="header_left_select">
+          <div class="header_left_select_input">
+            <svg class="header_left_select_input_svg" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.25 5C13.0628 5.00249 10.9658 5.84144 9.41923 7.33282C7.87261 8.8242 7.00259 10.8462 7.00001 12.9554C6.99739 14.6789 7.58124 16.3558 8.66201 17.7286C8.66201 17.7286 8.88701 18.0142 8.92376 18.0555L15.25 25.25L21.5792 18.0518C21.6122 18.0135 21.838 17.7286 21.838 17.7286L21.8387 17.7264C22.919 16.3542 23.5026 14.6781 23.5 12.9554C23.4974 10.8462 22.6274 8.8242 21.0808 7.33282C19.5342 5.84144 17.4372 5.00249 15.25 5ZM15.25 15.8482C14.6567 15.8482 14.0766 15.6786 13.5833 15.3607C13.0899 15.0428 12.7054 14.591 12.4784 14.0624C12.2513 13.5338 12.1919 12.9521 12.3076 12.391C12.4234 11.8298 12.7091 11.3144 13.1287 10.9098C13.5482 10.5052 14.0828 10.2297 14.6647 10.1181C15.2467 10.0065 15.8499 10.0638 16.398 10.2827C16.9462 10.5017 17.4148 10.8724 17.7444 11.3482C18.074 11.8239 18.25 12.3832 18.25 12.9554C18.249 13.7223 17.9326 14.4575 17.3702 14.9999C16.8078 15.5422 16.0453 15.8473 15.25 15.8482Z"
+                fill="#F3002C" />
+            </svg>
+            <p class="header_left_select_input_text">Санкт-Петербург</p>
+            <svg class="header_left_select_input_svg-arr" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 6.25L16.25 12.5L15.375 13.375L10 8L4.625 13.375L3.75 12.5L10 6.25Z" fill="#121212" />
+            </svg>
+          </div>
+          <div class="header_left_select_menu">
+            <ul class="header_left_select_menu_list">
+              <li class="header_left_select_menu_list_item">Санкт-Петербург</li>
+              <li class="header_left_select_menu_list_item">Москва</li>
+              <li class="header_left_select_menu_list_item">Челябинск</li>
+              <li class="header_left_select_menu_list_item">Ярославль</li>
+              <li class="header_left_select_menu_list_item">Нижний Новгород</li>
+              <li class="header_left_select_menu_list_item">Санкт-Петербург</li>
+              <li class="header_left_select_menu_list_item">Москва</li>
+              <li class="header_left_select_menu_list_item">Челябинск</li>
+              <li class="header_left_select_menu_list_item">Ярославль</li>
+              <li class="header_left_select_menu_list_item">Нижний Новгород</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_left_stars">
+          <svg class="header_left_stars_item" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.0603 0.941406L16.9827 8.60236L25.481 9.96529L19.4068 16.063L20.7367 24.5663L13.0603 20.6739L5.3839 24.5663L6.71376 16.063L0.639648 9.96529L9.13791 8.60236L13.0603 0.941406Z"
+              fill="#FFCA00" />
+            <path
+              d="M17.0222 8.59675L13.0566 0.941406V20.6594L20.8176 24.549L19.4731 16.0519L25.6142 9.95869L17.0222 8.59675Z"
+              fill="#FFDB2E" />
+          </svg>
+          <svg class="header_left_stars_item" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.0603 0.941406L16.9827 8.60236L25.481 9.96529L19.4068 16.063L20.7367 24.5663L13.0603 20.6739L5.3839 24.5663L6.71376 16.063L0.639648 9.96529L9.13791 8.60236L13.0603 0.941406Z"
+              fill="#FFCA00" />
+            <path
+              d="M17.0222 8.59675L13.0566 0.941406V20.6594L20.8176 24.549L19.4731 16.0519L25.6142 9.95869L17.0222 8.59675Z"
+              fill="#FFDB2E" />
+          </svg>
+          <svg class="header_left_stars_item" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.0603 0.941406L16.9827 8.60236L25.481 9.96529L19.4068 16.063L20.7367 24.5663L13.0603 20.6739L5.3839 24.5663L6.71376 16.063L0.639648 9.96529L9.13791 8.60236L13.0603 0.941406Z"
+              fill="#FFCA00" />
+            <path
+              d="M17.0222 8.59675L13.0566 0.941406V20.6594L20.8176 24.549L19.4731 16.0519L25.6142 9.95869L17.0222 8.59675Z"
+              fill="#FFDB2E" />
+          </svg>
+          <svg class="header_left_stars_item" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.0603 0.941406L16.9827 8.60236L25.481 9.96529L19.4068 16.063L20.7367 24.5663L13.0603 20.6739L5.3839 24.5663L6.71376 16.063L0.639648 9.96529L9.13791 8.60236L13.0603 0.941406Z"
+              fill="#FFCA00" />
+            <path
+              d="M17.0222 8.59675L13.0566 0.941406V20.6594L20.8176 24.549L19.4731 16.0519L25.6142 9.95869L17.0222 8.59675Z"
+              fill="#FFDB2E" />
+          </svg>
+          <svg class="header_left_stars_item" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.0603 0.941406L16.9827 8.60236L25.481 9.96529L19.4068 16.063L20.7367 24.5663L13.0603 20.6739L5.3839 24.5663L6.71376 16.063L0.639648 9.96529L9.13791 8.60236L13.0603 0.941406Z"
+              fill="#FFCA00" />
+            <path
+              d="M17.0222 8.59675L13.0566 0.941406V20.6594L20.8176 24.549L19.4731 16.0519L25.6142 9.95869L17.0222 8.59675Z"
+              fill="#FFDB2E" />
+          </svg>
+        </div>
+      </div>
+      <a href="index.html" class="header_logo">
+        <img src="./media/icons/logo.svg " alt="" class="header_logo">
+      </a>
+      <div class="header_right">
+        <div class="header_seti">
+          <a href="" class="header_seti_item">
+            <svg class="header_seti_item_svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M29.626 10.4444C27.2427 8.06944 24.065 6.75 20.7108 6.75C13.7375 6.75 8.08827 12.3796 8.08827 19.3287C8.08827 21.5278 8.70616 23.7269 9.76539 25.5741L8 32.0833L14.7085 30.3241C16.5621 31.2917 18.5923 31.8194 20.7108 31.8194C27.6841 31.8194 33.3333 26.1898 33.3333 19.2407C33.2451 15.9861 32.0093 12.8194 29.626 10.4444ZM26.8014 23.8148C26.5366 24.5185 25.3008 25.2222 24.6829 25.3102C24.1533 25.3981 23.4472 25.3981 22.741 25.2222C22.2997 25.0463 21.6818 24.8704 20.9756 24.5185C17.7979 23.1991 15.7677 20.0324 15.5912 19.7685C15.4146 19.5926 14.2671 18.0972 14.2671 16.5139C14.2671 14.9306 15.0616 14.2269 15.3264 13.875C15.5912 13.5231 15.9443 13.5231 16.2091 13.5231C16.3856 13.5231 16.6504 13.5231 16.8269 13.5231C17.0035 13.5231 17.2683 13.4352 17.5331 14.0509C17.7979 14.6667 18.4158 16.25 18.5041 16.338C18.5923 16.5139 18.5923 16.6898 18.5041 16.8657C18.4158 17.0417 18.3275 17.2176 18.151 17.3935C17.9744 17.5694 17.7979 17.8333 17.7096 17.9213C17.5331 18.0972 17.3566 18.2731 17.5331 18.537C17.7096 18.8889 18.3275 19.8565 19.2985 20.7361C20.5343 21.7917 21.5052 22.1435 21.8583 22.3194C22.2114 22.4954 22.3879 22.4074 22.5645 22.2315C22.741 22.0556 23.3589 21.3519 23.5354 21C23.712 20.6481 23.9768 20.7361 24.2416 20.8241C24.5064 20.912 26.0952 21.7037 26.36 21.8796C26.7131 22.0556 26.8897 22.1435 26.9779 22.2315C27.0662 22.4954 27.0662 23.1111 26.8014 23.8148Z"
+                fill="#FFCA00" />
+            </svg>
+          </a>
+          <a href="" class="header_seti_item">
+            <svg class="header_seti_item_svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M31.5591 26.8L26.0827 21.8207C25.8238 21.5854 25.4836 21.4599 25.134 21.4707C24.7843 21.4815 24.4526 21.6278 24.2087 21.8786L20.9848 25.1941C20.2088 25.0459 18.6488 24.5595 17.0429 22.9577C15.437 21.3505 14.9507 19.7864 14.8065 19.0158L18.1193 15.7905C18.3704 15.5468 18.5169 15.215 18.5277 14.8653C18.5385 14.5155 18.4128 14.1753 18.1772 13.9165L13.1993 8.44147C12.9636 8.18194 12.636 8.02451 12.2861 8.00263C11.9362 7.98074 11.5915 8.09612 11.3253 8.32426L8.40185 10.8314C8.16893 11.0652 8.02991 11.3763 8.01116 11.7058C7.99095 12.0426 7.60565 20.0208 13.7921 26.2099C19.189 31.6055 25.9493 32.0002 27.8112 32.0002C28.0833 32.0002 28.2503 31.9921 28.2948 31.9894C28.6242 31.971 28.9352 31.8313 29.1678 31.5974L31.6736 28.6726C31.9027 28.4072 32.0189 28.0628 31.9975 27.713C31.9761 27.3631 31.8188 27.0354 31.5591 26.8Z"
+                fill="#FFCA00" />
+            </svg>
+          </a>
+        </div>
+        <a href="" class="header_right_phone">8 (800) 000 00 00</a>
+        <div class="header_menu_button close">
+          <svg class="header_menu_button_svg close" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M37.5 33.3125C38.2223 33.3129 38.9167 33.5911 39.4395 34.0895C39.9622 34.588 40.2731 35.2684 40.3079 35.9898C40.3426 36.7113 40.0984 37.4184 39.6259 37.9648C39.1535 38.5111 38.4889 38.8547 37.77 38.9244L37.5 38.9375H7.5C6.77772 38.9371 6.08326 38.6589 5.56053 38.1605C5.03779 37.662 4.72685 36.9816 4.69214 36.2602C4.65743 35.5387 4.90161 34.8316 5.37408 34.2852C5.84655 33.7389 6.51109 33.3953 7.23 33.3256L7.5 33.3125H37.5ZM37.5 20.1875C38.2459 20.1875 38.9613 20.4838 39.4887 21.0113C40.0162 21.5387 40.3125 22.2541 40.3125 23C40.3125 23.7459 40.0162 24.4613 39.4887 24.9887C38.9613 25.5162 38.2459 25.8125 37.5 25.8125H7.5C6.75408 25.8125 6.03871 25.5162 5.51126 24.9887C4.98382 24.4613 4.6875 23.7459 4.6875 23C4.6875 22.2541 4.98382 21.5387 5.51126 21.0113C6.03871 20.4838 6.75408 20.1875 7.5 20.1875H37.5ZM37.5 7.0625C38.2459 7.0625 38.9613 7.35882 39.4887 7.88626C40.0162 8.41371 40.3125 9.12908 40.3125 9.875C40.3125 10.6209 40.0162 11.3363 39.4887 11.8637C38.9613 12.3912 38.2459 12.6875 37.5 12.6875H7.5C6.75408 12.6875 6.03871 12.3912 5.51126 11.8637C4.98382 11.3363 4.6875 10.6209 4.6875 9.875C4.6875 9.12908 4.98382 8.41371 5.51126 7.88626C6.03871 7.35882 6.75408 7.0625 7.5 7.0625H37.5Z"
+              fill="#FFCA00" />
+          </svg>
+          <svg class="header_menu_button_svg open" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44.5626" height="4.45626" rx="2.22813"
+              transform="matrix(0.710092 -0.704109 0.710092 0.704109 5 36.375)" fill="#FFCA00" />
+            <rect width="44.5626" height="4.45626" rx="2.22813"
+              transform="matrix(0.710092 0.704109 -0.710092 0.704109 8.35645 5.48438)" fill="#FFCA00" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container ">
+        <div class="header-bottom_top">
+          <div class="header-btm-top-flex">
+            <div class="header-bottom_left">
+              <ul class="header-bottom_left_menu">
+                <li class="header-bottom_left_menu_item"><a href="" class="header-bottom_left_menu_item_href">Услуги</a>
+                </li>
+                <li class="header-bottom_left_menu_item"><a href=""
+                    class="header-bottom_left_menu_item_href">Стоимость</a></li>
+                <li class="header-bottom_left_menu_item"><a href="/keyses.html"
+                    class="header-bottom_left_menu_item_href">Кейсы</a></li>
+                <li class="header-bottom_left_menu_item have-child">
+                  <div class="header-bottom_left_menu_item_title">
+                    <p class="header-bottom_left_menu_item_href">Отраслевые решения</p>
+                    <svg class="header-bottom_left_menu_item_title_svg" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 7.50078L19.5 15.0008L18.45 16.0508L12 9.60078L5.55 16.0508L4.5 15.0008L12 7.50078Z"
+                        fill="#F8F8F8" />
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="header-bottom_bottom mob">
+              <div class="header-bottom_left_menu_item_pod-menu">
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Автосервисы</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Медицинские сайты</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Медицинские сайты</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Медицинские сайты</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Автосервисы</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Автосервисы</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Автосервисы</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Бухгалтерские услуги</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Бухгалтерские услуги</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Бухгалтерские услуги</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Мебель</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Мебель</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Мебель</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Юридические услуги</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Юридические услуги</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Юридические услуги</a>
+                <a href="" class="header-bottom_left_menu_item_pod-menu_item">Юридические услуги</a>
+              </div>
+            </div>
+            <div class="header-bottom-right">
+              <a href="" class="header-bottom-right_item">Обо мне</a>
+              <a href="" class="header-bottom-right_item">Отзывы</a>
+              <a href="" class="header-bottom-right_item">Вопросы и ответы</a>
+              <a href="" class="header-bottom-right_item">Калькулятор</a>
+            </div>
+          </div>
+          <img src="./media/icons/logl-gray.svg" alt="" class="header-top-logo">
+        </div>
+        <div class="header-bottom_bottom desk">
+          <div class="header-bottom_left_menu_item_pod-menu">
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Автосервисы</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Медицинские сайты</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Медицинские сайты</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Медицинские сайты</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Автосервисы</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Автосервисы</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Автосервисы</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Бухгалтерские услуги</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Бухгалтерские услуги</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Бухгалтерские услуги</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Мебель</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Мебель</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Мебель</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Юридические услуги</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Юридические услуги</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Юридические услуги</a>
+            <a href="" class="header-bottom_left_menu_item_pod-menu_item">Юридические услуги</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="bred-path">
+      <div class="container">
+        <div class="bred-path-main">
+          <svg class="bred-path-main-svg" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.1 1.9875C8.35964 1.79277 8.67544 1.6875 9 1.6875C9.32456 1.6875 9.64036 1.79277 9.9 1.9875L15.15 5.925C15.3363 6.06472 15.4875 6.2459 15.5916 6.45418C15.6958 6.66246 15.75 6.89213 15.75 7.125V14.25C15.75 14.6478 15.592 15.0294 15.3107 15.3107C15.0294 15.592 14.6478 15.75 14.25 15.75H3.75C3.35218 15.75 2.97064 15.592 2.68934 15.3107C2.40804 15.0294 2.25 14.6478 2.25 14.25V7.125C2.25 6.89213 2.30422 6.66246 2.40836 6.45418C2.5125 6.2459 2.66371 6.06472 2.85 5.925L8.1 1.9875Z"
+              fill="#808080" />
+          </svg>
+          <p class="bred-path-main-text">Главная</p>
+        </div>
+        <svg class="bread-path-razd" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.3536 4.35355C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464466C11.9763 0.269204 11.6597 0.269204 11.4645 0.464466C11.2692 0.659728 11.2692 0.976311 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53553C11.6597 7.7308 11.9763 7.7308 12.1716 7.53553L15.3536 4.35355ZM0 4.5H15V3.5H0V4.5Z"
+            fill="#303030" />
+        </svg>
+        <div class="bred-path-sup">О компании</div>
+      </div>
+    </section>
+    <section class="about-company-main white-bread">
+      <div class="container">
+        <div class="a-main-wrapper">
+          <div class="a-main-info">
+            <div class="section-header">
+              <h1 class="h2 keyses-heading"><span>О </span> компании</h1>
+            </div>
+            <div class="a-main-info-mid-text">
+              <p class="Text_18 a-main-text">
+                Наша компания специализируется на SEO продвижении сайтов с 2016 года. Мы успешно оптимизировали и продвинули более 1000 сайтов различных тематик и направлений, включая информационные порталы, корпоративные сайты, интернет-магазины и другие.
+              </p>
+              <a href="" class="whatsapp-href button">
+                <svg class="whatsapp-href-svg" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M30.126 10.4444C27.7427 8.06944 24.565 6.75 21.2108 6.75C14.2375 6.75 8.58827 12.3796 8.58827 19.3287C8.58827 21.5278 9.20616 23.7269 10.2654 25.5741L8.5 32.0833L15.2085 30.3241C17.0621 31.2917 19.0923 31.8194 21.2108 31.8194C28.1841 31.8194 33.8333 26.1898 33.8333 19.2407C33.7451 15.9861 32.5093 12.8194 30.126 10.4444ZM27.3014 23.8148C27.0366 24.5185 25.8008 25.2222 25.1829 25.3102C24.6533 25.3981 23.9472 25.3981 23.241 25.2222C22.7997 25.0463 22.1818 24.8704 21.4756 24.5185C18.2979 23.1991 16.2677 20.0324 16.0912 19.7685C15.9146 19.5926 14.7671 18.0972 14.7671 16.5139C14.7671 14.9306 15.5616 14.2269 15.8264 13.875C16.0912 13.5231 16.4443 13.5231 16.7091 13.5231C16.8856 13.5231 17.1504 13.5231 17.3269 13.5231C17.5035 13.5231 17.7683 13.4352 18.0331 14.0509C18.2979 14.6667 18.9158 16.25 19.0041 16.338C19.0923 16.5139 19.0923 16.6898 19.0041 16.8657C18.9158 17.0417 18.8275 17.2176 18.651 17.3935C18.4744 17.5694 18.2979 17.8333 18.2096 17.9213C18.0331 18.0972 17.8566 18.2731 18.0331 18.537C18.2096 18.8889 18.8275 19.8565 19.7985 20.7361C21.0343 21.7917 22.0052 22.1435 22.3583 22.3194C22.7114 22.4954 22.8879 22.4074 23.0645 22.2315C23.241 22.0556 23.8589 21.3519 24.0354 21C24.212 20.6481 24.4768 20.7361 24.7416 20.8241C25.0064 20.912 26.5952 21.7037 26.86 21.8796C27.2131 22.0556 27.3897 22.1435 27.4779 22.2315C27.5662 22.4954 27.5662 23.1111 27.3014 23.8148Z"
+                        fill="#292929" />
+                </svg>
+                <p class="whatsapp-href-text">Написать WhatsApp</p>
+              </a>
+            </div>
+            <div class="a-main-video mob">
+              <svg class="a-main-video-bg-svg" viewBox="0 0 350 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.6" d="M342.653 3C345.054 3 347 4.94639 347 7.34737L347 642.653C347 645.054 345.054 647 342.653 647H65.0576C62.9558 647 61.1549 645.496 60.78 643.428L3.18951 325.776C3.09656 325.263 3.09656 324.737 3.18951 324.224L60.78 6.57184C61.1549 4.50371 62.9557 3 65.0576 3L342.653 3Z" stroke="#FFCA00" stroke-width="6" />
+              </svg>
+              <img src="./media/bg/aboutMe.png" alt="" class="a-main-wideo-bg">
+              <svg class="a-main-video-info-go" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="34.6219" cy="34.9957" rx="12.8333" ry="13.2222" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0107 63.0078C42.4368 63.0078 49.5587 60.0578 54.8097 54.8068C60.0608 49.5558 63.0107 42.4339 63.0107 35.0078C63.0107 27.5818 60.0608 20.4598 54.8097 15.2088C49.5587 9.9578 42.4368 7.00781 35.0107 7.00781C27.5847 7.00781 20.4628 9.9578 15.2118 15.2088C9.96073 20.4598 7.01074 27.5818 7.01074 35.0078C7.01074 42.4339 9.96073 49.5558 15.2118 54.8068C20.4628 60.0578 27.5847 63.0078 35.0107 63.0078ZM33.4532 25.0958C32.9261 24.7441 32.3135 24.5422 31.6805 24.5114C31.0476 24.4807 30.4183 24.6223 29.8596 24.9213C29.3009 25.2202 28.8338 25.6652 28.5082 26.2088C28.1826 26.7524 28.0106 27.3742 28.0107 28.0078V42.0078C28.0106 42.6415 28.1826 43.2633 28.5082 43.8068C28.8338 44.3504 29.3009 44.7954 29.8596 45.0944C30.4183 45.3933 31.0476 45.535 31.6805 45.5042C32.3135 45.4735 32.9261 45.2715 33.4532 44.9198L43.9532 37.9198C44.4326 37.6002 44.8256 37.1672 45.0975 36.6592C45.3693 36.1512 45.5115 35.584 45.5115 35.0078C45.5115 34.4317 45.3693 33.8644 45.0975 33.3564C44.8256 32.8485 44.4326 32.4154 43.9532 32.0958L33.4532 25.0958Z" fill="#FFCA00" />
+              </svg>
+              <div class="a-main-video-info">
+                <div class="a-main-cideo-info-texts">
+                  <p class="a-main-cideo-info-texts-text">«Создание и продвижение сайтов с гарантией в договоре. Выведу вас на достойное место...»</p>
+                  <div class="a-main-video-avatar">
+                    <img src="./media/bg/aboutMeAvatar.png" alt="" class="a-main-video-avatar-img">
+                    <p class="a-main-video-avatar-name">Руслан</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="a-main-info-block">
+              <svg class="a-main-info-block-svg" viewBox="0 0 50 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.05375 4.58888C-3.30047 10.4382 6.93534 29.4136 11.8151 36.2822C15.5082 41.4804 11.8151 37.8331 11.8151 25.4253C11.8151 13.0176 26.2034 12.7155 21.7622 5.26285C17.4203 -2.02328 5.40797 -1.26048 1.05375 4.58888Z" fill="white" />
+                <path d="M27.667 4.58888C23.3128 10.4382 33.5486 29.4136 38.4284 36.2822C42.1214 41.4804 38.4284 37.8331 38.4284 25.4253C38.4284 13.0176 52.8167 12.7155 48.3755 5.26285C44.0336 -2.02328 32.0213 -1.26048 27.667 4.58888Z" fill="white" />
+              </svg>
+              <p class="a-main-info-block-text"><span>Наша миссия —</span> помочь клиентам увеличить посещаемость сайтов и повысить продажи. Мы используем только белые методы продвижения, которые не нарушают правила поисковых систем. Это позволяет нашим клиентам занимать высокие позиции в результатах поиска на долгосрочной основе.</p>
+            </div>
+          </div>
+          <div class="a-main-video desk">
+            <svg class="a-main-video-bg-svg" viewBox="0 0 350 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.6" d="M342.653 3C345.054 3 347 4.94639 347 7.34737L347 642.653C347 645.054 345.054 647 342.653 647H65.0576C62.9558 647 61.1549 645.496 60.78 643.428L3.18951 325.776C3.09656 325.263 3.09656 324.737 3.18951 324.224L60.78 6.57184C61.1549 4.50371 62.9557 3 65.0576 3L342.653 3Z" stroke="#FFCA00" stroke-width="6" />
+            </svg>
+            <img src="./media/bg/aboutMe.png" alt="" class="a-main-wideo-bg">
+            <svg class="a-main-video-info-go" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="34.6219" cy="34.9957" rx="12.8333" ry="13.2222" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0107 63.0078C42.4368 63.0078 49.5587 60.0578 54.8097 54.8068C60.0608 49.5558 63.0107 42.4339 63.0107 35.0078C63.0107 27.5818 60.0608 20.4598 54.8097 15.2088C49.5587 9.9578 42.4368 7.00781 35.0107 7.00781C27.5847 7.00781 20.4628 9.9578 15.2118 15.2088C9.96073 20.4598 7.01074 27.5818 7.01074 35.0078C7.01074 42.4339 9.96073 49.5558 15.2118 54.8068C20.4628 60.0578 27.5847 63.0078 35.0107 63.0078ZM33.4532 25.0958C32.9261 24.7441 32.3135 24.5422 31.6805 24.5114C31.0476 24.4807 30.4183 24.6223 29.8596 24.9213C29.3009 25.2202 28.8338 25.6652 28.5082 26.2088C28.1826 26.7524 28.0106 27.3742 28.0107 28.0078V42.0078C28.0106 42.6415 28.1826 43.2633 28.5082 43.8068C28.8338 44.3504 29.3009 44.7954 29.8596 45.0944C30.4183 45.3933 31.0476 45.535 31.6805 45.5042C32.3135 45.4735 32.9261 45.2715 33.4532 44.9198L43.9532 37.9198C44.4326 37.6002 44.8256 37.1672 45.0975 36.6592C45.3693 36.1512 45.5115 35.584 45.5115 35.0078C45.5115 34.4317 45.3693 33.8644 45.0975 33.3564C44.8256 32.8485 44.4326 32.4154 43.9532 32.0958L33.4532 25.0958Z" fill="#FFCA00" />
+            </svg>
+            <div class="a-main-video-info">
+              <div class="a-main-cideo-info-texts">
+                <p class="a-main-cideo-info-texts-text">«Создание и продвижение сайтов с гарантией в договоре. Выведу вас на достойное место...»</p>
+                <div class="a-main-video-avatar">
+                  <img src="./media/bg/aboutMeAvatar.png" alt="" class="a-main-video-avatar-img">
+                  <p class="a-main-video-avatar-name">Руслан</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <section class="a-plusses">
+      <div class="container">
+        <div class="a-pluss-item">
+          <p class="a-pluss-item__heading">8 <span>лет</span></p>
+          <p class="a-pluss-item-text">успешно работаем на рынке SEO</p>
+        </div>
+        <div class="a-pluss-item">
+          <p class="a-pluss-item__heading">>10 <span>млн</span></p>
+          <p class="a-pluss-item-text">посетителей привели на сайты наших клиентов</p>
+        </div>
+        <div class="a-pluss-item">
+          <p class="a-pluss-item__heading">>100</p>
+          <p class="a-pluss-item-text">сайтов вывели в ТОП-3 в поиске</p>
+        </div>
+        <div class="a-pluss-item">
+          <p class="a-pluss-item__heading">>100</p>
+          <p class="a-pluss-item-text">сайтов вывели в ТОП-3 в поиске</p>
+        </div>
+      </div>
+    </section>
+    <section class="a-pred">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="h2">Мы предлагаем следующие услуги:</h2>
+        </div>
+        <div class="a-pred-wrapper">
+          <div class="a-pred-item">
+            <svg class="a-pred-item-svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 0L19.6368 9.20749L30 10.6966L22.5 17.8697L24.2735 28L15 23.218L5.7265 28L7.5 17.8697L0 10.6966L10.3632 9.20749L15 0Z" fill="#FFCA00" />
+            </svg>
+            <p class="a-pred-item-text">Анализ сайта и определение его слабых и сильных сторон</p>
+          </div>
+          <div class="a-pred-item">
+            <svg class="a-pred-item-svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 0L19.6368 9.20749L30 10.6966L22.5 17.8697L24.2735 28L15 23.218L5.7265 28L7.5 17.8697L0 10.6966L10.3632 9.20749L15 0Z" fill="#FFCA00" />
+            </svg>
+            <p class="a-pred-item-text">Разработка стратегии продвижения</p>
+          </div>
+          <div class="a-pred-item">
+            <svg class="a-pred-item-svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 0L19.6368 9.20749L30 10.6966L22.5 17.8697L24.2735 28L15 23.218L5.7265 28L7.5 17.8697L0 10.6966L10.3632 9.20749L15 0Z" fill="#FFCA00" />
+            </svg>
+            <p class="a-pred-item-text">Внутренняя оптимизация сайта</p>
+          </div>
+          <div class="a-pred-item">
+            <svg class="a-pred-item-svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 0L19.6368 9.20749L30 10.6966L22.5 17.8697L24.2735 28L15 23.218L5.7265 28L7.5 17.8697L0 10.6966L10.3632 9.20749L15 0Z" fill="#FFCA00" />
+            </svg>
+            <p class="a-pred-item-text">Внешняя оптимизация сайта</p>
+          </div>
+          <div class="a-pred-item">
+            <svg class="a-pred-item-svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 0L19.6368 9.20749L30 10.6966L22.5 17.8697L24.2735 28L15 23.218L5.7265 28L7.5 17.8697L0 10.6966L10.3632 9.20749L15 0Z" fill="#FFCA00" />
+            </svg>
+            <p class="a-pred-item-text">Мониторинг и анализ результатов продвижения</p>
+          </div>
+          <div class="a-pred-item">
+            <svg class="a-pred-item-svg" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 0L19.6368 9.20749L30 10.6966L22.5 17.8697L24.2735 28L15 23.218L5.7265 28L7.5 17.8697L0 10.6966L10.3632 9.20749L15 0Z" fill="#FFCA00" />
+            </svg>
+            <p class="a-pred-item-text">Контент-маркетинг</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="whatsapp">
+        <div class="container">
+            <h3 class="h3 whatsapp-heading">Самое время продвинуть Ваш бизнеса в ТОП выдаче</h3>
+            <p class="Text_18 whatsapp-text">Напишите нам прямо сейчас и мы бесплатно составим план продвижения
+                Вашего сайта</p>
+            <a href="" class="whatsapp-href button">
+                <svg class="whatsapp-href-svg" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M30.126 10.4444C27.7427 8.06944 24.565 6.75 21.2108 6.75C14.2375 6.75 8.58827 12.3796 8.58827 19.3287C8.58827 21.5278 9.20616 23.7269 10.2654 25.5741L8.5 32.0833L15.2085 30.3241C17.0621 31.2917 19.0923 31.8194 21.2108 31.8194C28.1841 31.8194 33.8333 26.1898 33.8333 19.2407C33.7451 15.9861 32.5093 12.8194 30.126 10.4444ZM27.3014 23.8148C27.0366 24.5185 25.8008 25.2222 25.1829 25.3102C24.6533 25.3981 23.9472 25.3981 23.241 25.2222C22.7997 25.0463 22.1818 24.8704 21.4756 24.5185C18.2979 23.1991 16.2677 20.0324 16.0912 19.7685C15.9146 19.5926 14.7671 18.0972 14.7671 16.5139C14.7671 14.9306 15.5616 14.2269 15.8264 13.875C16.0912 13.5231 16.4443 13.5231 16.7091 13.5231C16.8856 13.5231 17.1504 13.5231 17.3269 13.5231C17.5035 13.5231 17.7683 13.4352 18.0331 14.0509C18.2979 14.6667 18.9158 16.25 19.0041 16.338C19.0923 16.5139 19.0923 16.6898 19.0041 16.8657C18.9158 17.0417 18.8275 17.2176 18.651 17.3935C18.4744 17.5694 18.2979 17.8333 18.2096 17.9213C18.0331 18.0972 17.8566 18.2731 18.0331 18.537C18.2096 18.8889 18.8275 19.8565 19.7985 20.7361C21.0343 21.7917 22.0052 22.1435 22.3583 22.3194C22.7114 22.4954 22.8879 22.4074 23.0645 22.2315C23.241 22.0556 23.8589 21.3519 24.0354 21C24.212 20.6481 24.4768 20.7361 24.7416 20.8241C25.0064 20.912 26.5952 21.7037 26.86 21.8796C27.2131 22.0556 27.3897 22.1435 27.4779 22.2315C27.5662 22.4954 27.5662 23.1111 27.3014 23.8148Z"
+                        fill="#292929" />
+                </svg>
+                <p class="whatsapp-href-text">Написать WhatsApp</p>
+            </a>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="h2">Наша команда</h2>
+            </div>
+            <div class="team-wrapper">
+                <div class="team-item">
+                    <img src="./media/bg/team/1.png" alt="" class="team-item__img">
+                    <div class="team-item-info">
+                        <p class="Text_20 team-item-name">Руслан</p>
+                        <p class="Text_18 team-item_dol">Специалист CEO продвижения </p>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img src="./media/bg/team/2.png" alt="" class="team-item__img">
+                    <div class="team-item-info">
+                        <p class="Text_20 team-item-name">Мария</p>
+                        <p class="Text_18 team-item_dol">Web-дизайнер </p>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img src="./media/bg/team/3.png" alt="" class="team-item__img">
+                    <div class="team-item-info">
+                        <p class="Text_20 team-item-name">Вячеслав</p>
+                        <p class="Text_18 team-item_dol">Разработчик </p>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img src="./media/bg/team/4.png" alt="" class="team-item__img">
+                    <div class="team-item-info">
+                        <p class="Text_20 team-item-name">Екатерина</p>
+                        <p class="Text_18 team-item_dol">Реклама. Яндекс </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="price">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="h2">Стоимость продвижени<span>я</span> сайтов</h2>
+            </div>
+            <div class="price-wrapper">
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <div class="price-item-stars">
+                            <svg class="price-item-stars-item" viewBox="0 0 27 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.0603 0.941406L16.9827 8.60236L25.481 9.96529L19.4068 16.063L20.7367 24.5663L13.0603 20.6739L5.3839 24.5663L6.71376 16.063L0.639648 9.96529L9.13791 8.60236L13.0603 0.941406Z"
+                                    fill="#FFCA00" />
+                                <path
+                                    d="M17.0222 8.59675L13.0566 0.941406V20.6594L20.8176 24.549L19.4731 16.0519L25.6142 9.95869L17.0222 8.59675Z"
+                                    fill="#FFDB2E" />
+                            </svg>
+                        </div>
+                        <h3 class="price-item-heading h3">НАЧАЛЬНЫЙ</h3>
+                        <ul class="price-item-list">
+                            <li class="price-item-list__item">
+                                <svg class="price-item-list__item-svg" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 1.25C8.76942 1.25 7.07769 1.76318 5.63876 2.72464C4.19983 3.6861 3.07832 5.05267 2.41606 6.65152C1.75379 8.25037 1.58051 10.0097 1.91813 11.707C2.25575 13.4044 3.08911 14.9635 4.31282 16.1872C5.53653 17.4109 7.09563 18.2442 8.79296 18.5819C10.4903 18.9195 12.2496 18.7462 13.8485 18.0839C15.4473 17.4217 16.8139 16.3002 17.7754 14.8612C18.7368 13.4223 19.25 11.7306 19.25 10C19.25 7.67936 18.3281 5.45376 16.6872 3.81282C15.0462 2.17187 12.8206 1.25 10.5 1.25ZM9.25 13.4937L6.125 10.3687L7.11875 9.375L9.25 11.5063L13.8813 6.875L14.8788 7.86625L9.25 13.4937Z"
+                                        fill="#198CFF" />
+                                </svg>
+                                <p class="price-item-list__item-text Text_18">до 100 запросов в ТОП-5 с гарантией по
+                                    договору</p>
+                            </li>
+                            <li class="price-item-list__item">
+                                <svg class="price-item-list__item-svg" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 1.25C8.76942 1.25 7.07769 1.76318 5.63876 2.72464C4.19983 3.6861 3.07832 5.05267 2.41606 6.65152C1.75379 8.25037 1.58051 10.0097 1.91813 11.707C2.25575 13.4044 3.08911 14.9635 4.31282 16.1872C5.53653 17.4109 7.09563 18.2442 8.79296 18.5819C10.4903 18.9195 12.2496 18.7462 13.8485 18.0839C15.4473 17.4217 16.8139 16.3002 17.7754 14.8612C18.7368 13.4223 19.25 11.7306 19.25 10C19.25 7.67936 18.3281 5.45376 16.6872 3.81282C15.0462 2.17187 12.8206 1.25 10.5 1.25ZM9.25 13.4937L6.125 10.3687L7.11875 9.375L9.25 11.5063L13.8813 6.875L14.8788 7.86625L9.25 13.4937Z"
+                                        fill="#198CFF" />
+                                </svg>
+                                <p class="price-item-list__item-text Text_18">Гарантия возврата денег</p>
+                            </li>
+                            <li class="price-item-list__item">
+                                <svg class="price-item-list__item-svg" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 1.25C8.76942 1.25 7.07769 1.76318 5.63876 2.72464C4.19983 3.6861 3.07832 5.05267 2.41606 6.65152C1.75379 8.25037 1.58051 10.0097 1.91813 11.707C2.25575 13.4044 3.08911 14.9635 4.31282 16.1872C5.53653 17.4109 7.09563 18.2442 8.79296 18.5819C10.4903 18.9195 12.2496 18.7462 13.8485 18.0839C15.4473 17.4217 16.8139 16.3002 17.7754 14.8612C18.7368 13.4223 19.25 11.7306 19.25 10C19.25 7.67936 18.3281 5.45376 16.6872 3.81282C15.0462 2.17187 12.8206 1.25 10.5 1.25ZM9.25 13.4937L6.125 10.3687L7.11875 9.375L9.25 11.5063L13.8813 6.875L14.8788 7.86625L9.25 13.4937Z"
+                                        fill="#198CFF" />
+                                </svg>
+                                <p class="price-item-list__item-text Text_18">Оплата за результат по факту</p>
+                            </li>
+                        </ul>
+                        <div class="Text_20 price-item-price">от 35 000 р/мес</div>
+                        <button class="button price-item-button">Заказать</button>
+                    </div>
+                    <svg class="price-item__bg" viewBox="0 0 373 531" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 7.99999C1 4.134 4.13401 1 8 1H365C368.866 1 372 4.13401 372 8V486.257C372 489.582 369.662 492.447 366.405 493.115L186.5 529.979L6.59482 493.115C3.33813 492.447 1 489.582 1 486.257V7.99999Z"
+                            stroke="#FFCA00" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <div class="price-item-stars">
+                            <svg class="price-item-stars-item" viewBox="0 0 27 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.0603 0.941406L16.9827 8.60236L25.481 9.96529L19.4068 16.063L20.7367 24.5663L13.0603 20.6739L5.3839 24.5663L6.71376 16.063L0.639648 9.96529L9.13791 8.60236L13.0603 0.941406Z"
+                                    fill="#FFCA00" />
+                                <path
+                                    d="M17.0222 8.59675L13.0566 0.941406V20.6594L20.8176 24.549L19.4731 16.0519L25.6142 9.95869L17.0222 8.59675Z"
+                                    fill="#FFDB2E" />
+                            </svg>
+                            <svg class="price-item-stars-item" viewBox="0 0 27 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.0603 0.941406L16.9827 8.60236L25.481 9.96529L19.4068 16.063L20.7367 24.5663L13.0603 20.6739L5.3839 24.5663L6.71376 16.063L0.639648 9.96529L9.13791 8.60236L13.0603 0.941406Z"
+                                    fill="#FFCA00" />
+                                <path
+                                    d="M17.0222 8.59675L13.0566 0.941406V20.6594L20.8176 24.549L19.4731 16.0519L25.6142 9.95869L17.0222 8.59675Z"
+                                    fill="#FFDB2E" />
+                            </svg>
+                        </div>
+                        <h3 class="price-item-heading h3">продвинутый</h3>
+                        <ul class="price-item-list">
+                            <li class="price-item-list__item">
+                                <svg class="price-item-list__item-svg" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 1.25C8.76942 1.25 7.07769 1.76318 5.63876 2.72464C4.19983 3.6861 3.07832 5.05267 2.41606 6.65152C1.75379 8.25037 1.58051 10.0097 1.91813 11.707C2.25575 13.4044 3.08911 14.9635 4.31282 16.1872C5.53653 17.4109 7.09563 18.2442 8.79296 18.5819C10.4903 18.9195 12.2496 18.7462 13.8485 18.0839C15.4473 17.4217 16.8139 16.3002 17.7754 14.8612C18.7368 13.4223 19.25 11.7306 19.25 10C19.25 7.67936 18.3281 5.45376 16.6872 3.81282C15.0462 2.17187 12.8206 1.25 10.5 1.25ZM9.25 13.4937L6.125 10.3687L7.11875 9.375L9.25 11.5063L13.8813 6.875L14.8788 7.86625L9.25 13.4937Z"
+                                        fill="#198CFF" />
+                                </svg>
+                                <p class="price-item-list__item-text Text_18">до 300 запросов в ТОП-5 с гарантией по
+                                    договору</p>
+                            </li>
+                            <li class="price-item-list__item">
+                                <svg class="price-item-list__item-svg" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 1.25C8.76942 1.25 7.07769 1.76318 5.63876 2.72464C4.19983 3.6861 3.07832 5.05267 2.41606 6.65152C1.75379 8.25037 1.58051 10.0097 1.91813 11.707C2.25575 13.4044 3.08911 14.9635 4.31282 16.1872C5.53653 17.4109 7.09563 18.2442 8.79296 18.5819C10.4903 18.9195 12.2496 18.7462 13.8485 18.0839C15.4473 17.4217 16.8139 16.3002 17.7754 14.8612C18.7368 13.4223 19.25 11.7306 19.25 10C19.25 7.67936 18.3281 5.45376 16.6872 3.81282C15.0462 2.17187 12.8206 1.25 10.5 1.25ZM9.25 13.4937L6.125 10.3687L7.11875 9.375L9.25 11.5063L13.8813 6.875L14.8788 7.86625L9.25 13.4937Z"
+                                        fill="#198CFF" />
+                                </svg>
+                                <p class="price-item-list__item-text Text_18">Гарантия возврата денег</p>
+                            </li>
+                            <li class="price-item-list__item">
+                                <svg class="price-item-list__item-svg" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 1.25C8.76942 1.25 7.07769 1.76318 5.63876 2.72464C4.19983 3.6861 3.07832 5.05267 2.41606 6.65152C1.75379 8.25037 1.58051 10.0097 1.91813 11.707C2.25575 13.4044 3.08911 14.9635 4.31282 16.1872C5.53653 17.4109 7.09563 18.2442 8.79296 18.5819C10.4903 18.9195 12.2496 18.7462 13.8485 18.0839C15.4473 17.4217 16.8139 16.3002 17.7754 14.8612C18.7368 13.4223 19.25 11.7306 19.25 10C19.25 7.67936 18.3281 5.45376 16.6872 3.81282C15.0462 2.17187 12.8206 1.25 10.5 1.25ZM9.25 13.4937L6.125 10.3687L7.11875 9.375L9.25 11.5063L13.8813 6.875L14.8788 7.86625L9.25 13.4937Z"
+                                        fill="#198CFF" />
+                                </svg>
+                                <p class="price-item-list__item-text Text_18">Оплата за результат по факту</p>
+                            </li>
+                        </ul>
+                        <div class="Text_20 price-item-price">от 60 000 р/мес</div>
+                        <button class="button price-item-button">Заказать</button>
+                    </div>
+                    <svg class="price-item__bg" viewBox="0 0 373 531" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 7.99999C3 5.23857 5.23857 3 8 3H365C367.761 3 370 5.23858 370 8V486.257C370 488.632 368.33 490.679 366.004 491.155L186.5 527.938L6.99632 491.155C4.6701 490.679 3 488.632 3 486.257V7.99999Z"
+                            stroke="#FFCA00" stroke-width="6" />
+                    </svg>
+
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info">
+                        <div class="price-item-stars">
+                            <svg class="price-item-stars-item" viewBox="0 0 27 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.0603 0.941406L16.9827 8.60236L25.481 9.96529L19.4068 16.063L20.7367 24.5663L13.0603 20.6739L5.3839 24.5663L6.71376 16.063L0.639648 9.96529L9.13791 8.60236L13.0603 0.941406Z"
+                                    fill="#FFCA00" />
+                                <path
+                                    d="M17.0222 8.59675L13.0566 0.941406V20.6594L20.8176 24.549L19.4731 16.0519L25.6142 9.95869L17.0222 8.59675Z"
+                                    fill="#FFDB2E" />
+                            </svg>
+                            <svg class="price-item-stars-item" viewBox="0 0 27 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.0603 0.941406L16.9827 8.60236L25.481 9.96529L19.4068 16.063L20.7367 24.5663L13.0603 20.6739L5.3839 24.5663L6.71376 16.063L0.639648 9.96529L9.13791 8.60236L13.0603 0.941406Z"
+                                    fill="#FFCA00" />
+                                <path
+                                    d="M17.0222 8.59675L13.0566 0.941406V20.6594L20.8176 24.549L19.4731 16.0519L25.6142 9.95869L17.0222 8.59675Z"
+                                    fill="#FFDB2E" />
+                            </svg>
+                            <svg class="price-item-stars-item" viewBox="0 0 27 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.0603 0.941406L16.9827 8.60236L25.481 9.96529L19.4068 16.063L20.7367 24.5663L13.0603 20.6739L5.3839 24.5663L6.71376 16.063L0.639648 9.96529L9.13791 8.60236L13.0603 0.941406Z"
+                                    fill="#FFCA00" />
+                                <path
+                                    d="M17.0222 8.59675L13.0566 0.941406V20.6594L20.8176 24.549L19.4731 16.0519L25.6142 9.95869L17.0222 8.59675Z"
+                                    fill="#FFDB2E" />
+                            </svg>
+                        </div>
+                        <h3 class="price-item-heading h3">продвинутый PRO</h3>
+                        <ul class="price-item-list">
+                            <li class="price-item-list__item">
+                                <svg class="price-item-list__item-svg" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 1.25C8.76942 1.25 7.07769 1.76318 5.63876 2.72464C4.19983 3.6861 3.07832 5.05267 2.41606 6.65152C1.75379 8.25037 1.58051 10.0097 1.91813 11.707C2.25575 13.4044 3.08911 14.9635 4.31282 16.1872C5.53653 17.4109 7.09563 18.2442 8.79296 18.5819C10.4903 18.9195 12.2496 18.7462 13.8485 18.0839C15.4473 17.4217 16.8139 16.3002 17.7754 14.8612C18.7368 13.4223 19.25 11.7306 19.25 10C19.25 7.67936 18.3281 5.45376 16.6872 3.81282C15.0462 2.17187 12.8206 1.25 10.5 1.25ZM9.25 13.4937L6.125 10.3687L7.11875 9.375L9.25 11.5063L13.8813 6.875L14.8788 7.86625L9.25 13.4937Z"
+                                        fill="#198CFF" />
+                                </svg>
+                                <p class="price-item-list__item-text Text_18">до 500 запросов в ТОП-5 с гарантией по
+                                    договору</p>
+                            </li>
+                            <li class="price-item-list__item">
+                                <svg class="price-item-list__item-svg" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 1.25C8.76942 1.25 7.07769 1.76318 5.63876 2.72464C4.19983 3.6861 3.07832 5.05267 2.41606 6.65152C1.75379 8.25037 1.58051 10.0097 1.91813 11.707C2.25575 13.4044 3.08911 14.9635 4.31282 16.1872C5.53653 17.4109 7.09563 18.2442 8.79296 18.5819C10.4903 18.9195 12.2496 18.7462 13.8485 18.0839C15.4473 17.4217 16.8139 16.3002 17.7754 14.8612C18.7368 13.4223 19.25 11.7306 19.25 10C19.25 7.67936 18.3281 5.45376 16.6872 3.81282C15.0462 2.17187 12.8206 1.25 10.5 1.25ZM9.25 13.4937L6.125 10.3687L7.11875 9.375L9.25 11.5063L13.8813 6.875L14.8788 7.86625L9.25 13.4937Z"
+                                        fill="#198CFF" />
+                                </svg>
+                                <p class="price-item-list__item-text Text_18">Гарантия возврата денег</p>
+                            </li>
+                            <li class="price-item-list__item">
+                                <svg class="price-item-list__item-svg" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 1.25C8.76942 1.25 7.07769 1.76318 5.63876 2.72464C4.19983 3.6861 3.07832 5.05267 2.41606 6.65152C1.75379 8.25037 1.58051 10.0097 1.91813 11.707C2.25575 13.4044 3.08911 14.9635 4.31282 16.1872C5.53653 17.4109 7.09563 18.2442 8.79296 18.5819C10.4903 18.9195 12.2496 18.7462 13.8485 18.0839C15.4473 17.4217 16.8139 16.3002 17.7754 14.8612C18.7368 13.4223 19.25 11.7306 19.25 10C19.25 7.67936 18.3281 5.45376 16.6872 3.81282C15.0462 2.17187 12.8206 1.25 10.5 1.25ZM9.25 13.4937L6.125 10.3687L7.11875 9.375L9.25 11.5063L13.8813 6.875L14.8788 7.86625L9.25 13.4937Z"
+                                        fill="#198CFF" />
+                                </svg>
+                                <p class="price-item-list__item-text Text_18">Оплата за результат по факту</p>
+                            </li>
+                        </ul>
+                        <div class="Text_20 price-item-price">120 000 р /мес</div>
+                        <button class="button price-item-button">Заказать</button>
+                    </div>
+                    <svg class="price-item__bg" viewBox="0 0 373 531" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 7.99999C1 4.134 4.13401 1 8 1H365C368.866 1 372 4.13401 372 8V486.257C372 489.582 369.662 492.447 366.405 493.115L186.5 529.979L6.59482 493.115C3.33813 492.447 1 489.582 1 486.257V7.99999Z"
+                            stroke="#FFCA00" stroke-width="2" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video-rev">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="h2"><span>О</span>тзывы клиентов о SEO продвижении сайта</h2>
+            </div>
+            <div class="video-rev-slider-container">
+                <div class="swiper video-rev-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide video-rev-slide">
+                            <div class="about-me__video-block">
+                                <img src="./media/revs/1.png" alt="" class="about-me_video_bg">
+                                <div class="about-me_video-texts">
+                                    <p class="Text_16 about-me_video_p">«Создание и продвижение сайтов с гарантией в
+                                        договоре. Выведу вас на достойное место...»</p>
+                                    <div class="about-me_video_avatar-container">
+                                        <img src="./media/bg/aboutMeAvatar.png" alt=""
+                                            class="about0me_video_avatar_img">
+                                        <p class="about0me_video_avatar_text">Александр</p>
+                                    </div>
+                                </div>
+                                <svg class="about-me_video_go" viewBox="0 0 70 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="34.6224" cy="34.9957" rx="12.8333" ry="13.2222" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M35.0107 63.0078C42.4368 63.0078 49.5587 60.0578 54.8097 54.8068C60.0608 49.5558 63.0107 42.4339 63.0107 35.0078C63.0107 27.5818 60.0608 20.4598 54.8097 15.2088C49.5587 9.9578 42.4368 7.00781 35.0107 7.00781C27.5847 7.00781 20.4628 9.9578 15.2118 15.2088C9.96073 20.4598 7.01074 27.5818 7.01074 35.0078C7.01074 42.4339 9.96073 49.5558 15.2118 54.8068C20.4628 60.0578 27.5847 63.0078 35.0107 63.0078ZM33.4532 25.0958C32.9261 24.7441 32.3135 24.5422 31.6805 24.5114C31.0476 24.4807 30.4183 24.6223 29.8596 24.9213C29.3009 25.2202 28.8338 25.6652 28.5082 26.2088C28.1826 26.7524 28.0106 27.3742 28.0107 28.0078V42.0078C28.0106 42.6415 28.1826 43.2633 28.5082 43.8068C28.8338 44.3504 29.3009 44.7954 29.8596 45.0944C30.4183 45.3933 31.0476 45.535 31.6805 45.5042C32.3135 45.4735 32.9261 45.2715 33.4532 44.9198L43.9532 37.9198C44.4326 37.6002 44.8256 37.1672 45.0975 36.6592C45.3693 36.1512 45.5115 35.584 45.5115 35.0078C45.5115 34.4317 45.3693 33.8644 45.0975 33.3564C44.8256 32.8485 44.4326 32.4154 43.9532 32.0958L33.4532 25.0958Z"
+                                        fill="#FFCA00" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video-rev-slide">
+                            <div class="about-me__video-block">
+                                <img src="./media/revs/2.png" alt="" class="about-me_video_bg">
+                                <div class="about-me_video-texts">
+                                    <p class="Text_16 about-me_video_p">«Создание и продвижение сайтов с гарантией в
+                                        договоре. Выведу вас на достойное место...»</p>
+                                    <div class="about-me_video_avatar-container">
+                                        <img src="./media/bg/aboutMeAvatar.png" alt=""
+                                            class="about0me_video_avatar_img">
+                                        <p class="about0me_video_avatar_text">Александр</p>
+                                    </div>
+                                </div>
+                                <svg class="about-me_video_go" viewBox="0 0 70 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="34.6224" cy="34.9957" rx="12.8333" ry="13.2222" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M35.0107 63.0078C42.4368 63.0078 49.5587 60.0578 54.8097 54.8068C60.0608 49.5558 63.0107 42.4339 63.0107 35.0078C63.0107 27.5818 60.0608 20.4598 54.8097 15.2088C49.5587 9.9578 42.4368 7.00781 35.0107 7.00781C27.5847 7.00781 20.4628 9.9578 15.2118 15.2088C9.96073 20.4598 7.01074 27.5818 7.01074 35.0078C7.01074 42.4339 9.96073 49.5558 15.2118 54.8068C20.4628 60.0578 27.5847 63.0078 35.0107 63.0078ZM33.4532 25.0958C32.9261 24.7441 32.3135 24.5422 31.6805 24.5114C31.0476 24.4807 30.4183 24.6223 29.8596 24.9213C29.3009 25.2202 28.8338 25.6652 28.5082 26.2088C28.1826 26.7524 28.0106 27.3742 28.0107 28.0078V42.0078C28.0106 42.6415 28.1826 43.2633 28.5082 43.8068C28.8338 44.3504 29.3009 44.7954 29.8596 45.0944C30.4183 45.3933 31.0476 45.535 31.6805 45.5042C32.3135 45.4735 32.9261 45.2715 33.4532 44.9198L43.9532 37.9198C44.4326 37.6002 44.8256 37.1672 45.0975 36.6592C45.3693 36.1512 45.5115 35.584 45.5115 35.0078C45.5115 34.4317 45.3693 33.8644 45.0975 33.3564C44.8256 32.8485 44.4326 32.4154 43.9532 32.0958L33.4532 25.0958Z"
+                                        fill="#FFCA00" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video-rev-slide">
+                            <div class="about-me__video-block">
+                                <img src="./media/revs/1.png" alt="" class="about-me_video_bg">
+                                <div class="about-me_video-texts">
+                                    <p class="Text_16 about-me_video_p">«Создание и продвижение сайтов с гарантией в
+                                        договоре. Выведу вас на достойное место...»</p>
+                                    <div class="about-me_video_avatar-container">
+                                        <img src="./media/bg/aboutMeAvatar.png" alt=""
+                                            class="about0me_video_avatar_img">
+                                        <p class="about0me_video_avatar_text">Александр</p>
+                                    </div>
+                                </div>
+                                <svg class="about-me_video_go" viewBox="0 0 70 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="34.6224" cy="34.9957" rx="12.8333" ry="13.2222" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M35.0107 63.0078C42.4368 63.0078 49.5587 60.0578 54.8097 54.8068C60.0608 49.5558 63.0107 42.4339 63.0107 35.0078C63.0107 27.5818 60.0608 20.4598 54.8097 15.2088C49.5587 9.9578 42.4368 7.00781 35.0107 7.00781C27.5847 7.00781 20.4628 9.9578 15.2118 15.2088C9.96073 20.4598 7.01074 27.5818 7.01074 35.0078C7.01074 42.4339 9.96073 49.5558 15.2118 54.8068C20.4628 60.0578 27.5847 63.0078 35.0107 63.0078ZM33.4532 25.0958C32.9261 24.7441 32.3135 24.5422 31.6805 24.5114C31.0476 24.4807 30.4183 24.6223 29.8596 24.9213C29.3009 25.2202 28.8338 25.6652 28.5082 26.2088C28.1826 26.7524 28.0106 27.3742 28.0107 28.0078V42.0078C28.0106 42.6415 28.1826 43.2633 28.5082 43.8068C28.8338 44.3504 29.3009 44.7954 29.8596 45.0944C30.4183 45.3933 31.0476 45.535 31.6805 45.5042C32.3135 45.4735 32.9261 45.2715 33.4532 44.9198L43.9532 37.9198C44.4326 37.6002 44.8256 37.1672 45.0975 36.6592C45.3693 36.1512 45.5115 35.584 45.5115 35.0078C45.5115 34.4317 45.3693 33.8644 45.0975 33.3564C44.8256 32.8485 44.4326 32.4154 43.9532 32.0958L33.4532 25.0958Z"
+                                        fill="#FFCA00" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video-rev-slide">
+                            <div class="about-me__video-block">
+                                <img src="./media/revs/2.png" alt="" class="about-me_video_bg">
+                                <div class="about-me_video-texts">
+                                    <p class="Text_16 about-me_video_p">«Создание и продвижение сайтов с гарантией в
+                                        договоре. Выведу вас на достойное место...»</p>
+                                    <div class="about-me_video_avatar-container">
+                                        <img src="./media/bg/aboutMeAvatar.png" alt=""
+                                            class="about0me_video_avatar_img">
+                                        <p class="about0me_video_avatar_text">Александр</p>
+                                    </div>
+                                </div>
+                                <svg class="about-me_video_go" viewBox="0 0 70 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="34.6224" cy="34.9957" rx="12.8333" ry="13.2222" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M35.0107 63.0078C42.4368 63.0078 49.5587 60.0578 54.8097 54.8068C60.0608 49.5558 63.0107 42.4339 63.0107 35.0078C63.0107 27.5818 60.0608 20.4598 54.8097 15.2088C49.5587 9.9578 42.4368 7.00781 35.0107 7.00781C27.5847 7.00781 20.4628 9.9578 15.2118 15.2088C9.96073 20.4598 7.01074 27.5818 7.01074 35.0078C7.01074 42.4339 9.96073 49.5558 15.2118 54.8068C20.4628 60.0578 27.5847 63.0078 35.0107 63.0078ZM33.4532 25.0958C32.9261 24.7441 32.3135 24.5422 31.6805 24.5114C31.0476 24.4807 30.4183 24.6223 29.8596 24.9213C29.3009 25.2202 28.8338 25.6652 28.5082 26.2088C28.1826 26.7524 28.0106 27.3742 28.0107 28.0078V42.0078C28.0106 42.6415 28.1826 43.2633 28.5082 43.8068C28.8338 44.3504 29.3009 44.7954 29.8596 45.0944C30.4183 45.3933 31.0476 45.535 31.6805 45.5042C32.3135 45.4735 32.9261 45.2715 33.4532 44.9198L43.9532 37.9198C44.4326 37.6002 44.8256 37.1672 45.0975 36.6592C45.3693 36.1512 45.5115 35.584 45.5115 35.0078C45.5115 34.4317 45.3693 33.8644 45.0975 33.3564C44.8256 32.8485 44.4326 32.4154 43.9532 32.0958L33.4532 25.0958Z"
+                                        fill="#FFCA00" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-rev-slider-arrows">
+                    <div class="video-arr-prev video-rev-arr">
+                        <svg class="video-arr-prev-svg" viewBox="0 0 60 60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M39.2678 13.2322C40.2441 14.2085 40.2441 15.7915 39.2678 16.7678L26.0355 30L39.2678 43.2322C40.2441 44.2085 40.2441 45.7915 39.2678 46.7678C38.2915 47.7441 36.7085 47.7441 35.7322 46.7678L20.7322 31.7678C19.7559 30.7915 19.7559 29.2085 20.7322 28.2322L35.7322 13.2322C36.7085 12.2559 38.2915 12.2559 39.2678 13.2322Z"
+                                fill="#808080" />
+                        </svg>
+                    </div>
+                    <div class="video-arr-next video-rev-arr">
+                        <svg class="video-arr-prev-svg" viewBox="0 0 60 60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M39.2678 13.2322C40.2441 14.2085 40.2441 15.7915 39.2678 16.7678L26.0355 30L39.2678 43.2322C40.2441 44.2085 40.2441 45.7915 39.2678 46.7678C38.2915 47.7441 36.7085 47.7441 35.7322 46.7678L20.7322 31.7678C19.7559 30.7915 19.7559 29.2085 20.7322 28.2322L35.7322 13.2322C36.7085 12.2559 38.2915 12.2559 39.2678 13.2322Z"
+                                fill="#808080" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="video-rev-paggination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="ya-rev">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="h2">Отзывы на <span>Я</span>ндекс картах о продвижении сайтов в нашей компании</h2>
+            </div>
+            <div class="ya-rev-wrapper">
+                <img src="./media/bg/ya-revs.png" alt="" class="ya-rev-left">
+                <div class="ya-rev-r">
+                    <p class="ya-rev-heading">Получите аудит и расчёт стоимости продвижения в WhatsApp</p>
+                    <p class="Text_18 ya-rev-subheading">Оставьте номер телефона, к которому привязан Whatsapp, и адрес сайта. В течение дня мы подготовим вам аудит сайта и расчёт стоимости.</p>
+                    <div class="ya-rev-form">
+                        <input type="text" class="ya-rev-form-input" placeholder="Телефон">
+                        <input type="text" class="ya-rev-form-input" placeholder="Адрес вашего сайта">
+                        <div class="ya-rev-form-policy">
+                            <input checked type="checkbox" name="" id="ya-rev-policy-checkbox" class="ya-rev-policy-checkbox">
+                            <label for="ya-rev-policy-checkbox" class="ya-form-checkbox-visual">
+                                <svg class="ya-form-checkbox-visual-svg" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.4419 3.80806C13.686 4.05214 13.686 4.44786 13.4419 4.69194L6.56694 11.5669C6.32286 11.811 5.92714 11.811 5.68306 11.5669L2.55806 8.44194C2.31398 8.19786 2.31398 7.80214 2.55806 7.55806C2.80214 7.31398 3.19786 7.31398 3.44194 7.55806L6.125 10.2411L12.5581 3.80806C12.8021 3.56398 13.1979 3.56398 13.4419 3.80806Z"
+                                        fill="#FAFAFA" />
+                                </svg>
+                            </label>
+                            <p class="ya-rev-form-checkbox-text Text_14">Согласен(а) c политикой конфиденциальности и обработкой персональных данных</p>
+                        </div>
+                        <button class="button ya-rev-form-button">Получить расчёт</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="prodvig-form">
+      <div class="container">
+        <h3 class="prodvig-heading h3 ">Самое время продвинуть Ваш бизнеса в ТОП выдаче</h3>
+        <p class="Text_18 prodvig-text">Оставьте заявку и Мы бесплатно составим план продвижения Вашего сайта и свяжемся с Вами</p>
+        <div class="prodvig-form-block">
+          <div class="prodvig-fortm-top">
+            <input type="text" class="prodvig-form-inp" placeholder="Телефон">
+            <input type="text" class="prodvig-form-inp" placeholder="Адрес вашего сайта">
+            <div class="ya-rev-form-policy mob">
+              <input checked type="checkbox" name="" id="prodvig-form" class="ya-rev-policy-checkbox">
+              <label for="prodvig-form" class="ya-form-checkbox-visual">
+                <svg class="ya-form-checkbox-visual-svg" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.4419 3.80806C13.686 4.05214 13.686 4.44786 13.4419 4.69194L6.56694 11.5669C6.32286 11.811 5.92714 11.811 5.68306 11.5669L2.55806 8.44194C2.31398 8.19786 2.31398 7.80214 2.55806 7.55806C2.80214 7.31398 3.19786 7.31398 3.44194 7.55806L6.125 10.2411L12.5581 3.80806C12.8021 3.56398 13.1979 3.56398 13.4419 3.80806Z"
+                    fill="#FAFAFA" />
+                </svg>
+              </label>
+              <p class="ya-rev-form-checkbox-text Text_14">Согласен(а) c политикой конфиденциальности и обработкой
+                персональных данных</p>
+            </div>
+            <button class="button prodvig-send-btn">
+              Оставить заявку
+              <svg class="button_svg " viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M28.0613 17.0624L19.0613 26.0624C18.7795 26.3442 18.3973 26.5025 17.9988 26.5025C17.6002 26.5025 17.218 26.3442 16.9363 26.0624C16.6545 25.7807 16.4961 25.3985 16.4961 24.9999C16.4961 24.6014 16.6545 24.2192 16.9363 23.9374L23.375 17.5012H5C4.60218 17.5012 4.22064 17.3432 3.93934 17.0619C3.65804 16.7806 3.5 16.399 3.5 16.0012C3.5 15.6034 3.65804 15.2218 3.93934 14.9405C4.22064 14.6592 4.60218 14.5012 5 14.5012H23.375L16.9387 8.0612C16.657 7.7794 16.4986 7.39721 16.4986 6.9987C16.4986 6.60018 16.657 6.21799 16.9387 5.9362C17.2205 5.6544 17.6027 5.49609 18.0012 5.49609C18.3998 5.49609 18.782 5.6544 19.0637 5.9362L28.0637 14.9362C28.2036 15.0757 28.3145 15.2415 28.3901 15.4241C28.4657 15.6066 28.5045 15.8023 28.5043 15.9998C28.5041 16.1974 28.4648 16.393 28.3888 16.5753C28.3128 16.7577 28.2014 16.9232 28.0613 17.0624Z"
+                  fill="#292929" />
+              </svg>
+            </button>
+          </div>
+          <div class="prodvig-form-btm desk">
+            <div class="ya-rev-form-policy">
+              <input checked type="checkbox" name="" id="prodvig-form" class="ya-rev-policy-checkbox">
+              <label for="prodvig-form" class="ya-form-checkbox-visual">
+                <svg class="ya-form-checkbox-visual-svg" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.4419 3.80806C13.686 4.05214 13.686 4.44786 13.4419 4.69194L6.56694 11.5669C6.32286 11.811 5.92714 11.811 5.68306 11.5669L2.55806 8.44194C2.31398 8.19786 2.31398 7.80214 2.55806 7.55806C2.80214 7.31398 3.19786 7.31398 3.44194 7.55806L6.125 10.2411L12.5581 3.80806C12.8021 3.56398 13.1979 3.56398 13.4419 3.80806Z"
+                    fill="#FAFAFA" />
+                </svg>
+              </label>
+              <p class="ya-rev-form-checkbox-text Text_14">Согласен(а) c политикой конфиденциальности и обработкой
+                персональных данных</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="h2 footer-heading">КОНТАКТЫ</h2>
+      <div class="footer-contacts">
+        <div class="footer-contacts-item">
+          <p class="footer-contacts-item__heading">Позвонить</p>
+          <p class="footer-contact-item__text">8 (800) 000 00 00</p>
+        </div>
+        <div class="footer-contacts-item">
+          <p class="footer-contacts-item__heading">Написать</p>
+          <p class="footer-contact-item__text"> info@youtop.pro</p>
+        </div>
+        <div class="footer-contacts-item">
+          <p class="footer-contacts-item__heading big">Написать WhatsApp</p>
+        </div>
+      </div>
+      <div class="footer-menu ">
+        <div class="footer-menu-left">
+          <img src="./media/icons/logo.svg" alt="" class="footer-menu-logo">
+          <div class="footer-menu-coll first">
+            <a href="" class="footer-menu-item">Услуги</a>
+            <a href="" class="footer-menu-item">Стоимость</a>
+            <a href="" class="footer-menu-item">Кейсы</a>
+            <a class="footer-menu-item more">
+              <p class="footer-menu-item-text">Отраслевые решения</p>
+              <svg class="footer-menu-item-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 16.5002L4.5 9.0002L5.55 7.9502L12 14.4002L18.45 7.9502L19.5 9.0002L12 16.5002Z"
+                  fill="#F8F8F8" />
+              </svg>
+            </a>
+          </div>
+          <div class="footer-hidden mob-s">
+            <div class="footer-hidden-list">
+              <a href="" class="footer-hidden-item">Автосервисы</a>
+              <a href="" class="footer-hidden-item">Медицинские сайты</a>
+              <a href="" class="footer-hidden-item">Медицинские сайты</a>
+              <a href="" class="footer-hidden-item">Медицинские сайты</a>
+              <a href="" class="footer-hidden-item">Автозапчасти</a>
+              <a href="" class="footer-hidden-item">Автозапчасти</a>
+              <a href="" class="footer-hidden-item">Автозапчасти</a>
+              <a href="" class="footer-hidden-item">Бухгалтерские услуги</a>
+              <a href="" class="footer-hidden-item">Бухгалтерские услуги</a>
+              <a href="" class="footer-hidden-item">Бухгалтерские услуги</a>
+              <a href="" class="footer-hidden-item">Мебель</a>
+              <a href="" class="footer-hidden-item">Мебель</a>
+              <a href="" class="footer-hidden-item">Мебель</a>
+              <a href="" class="footer-hidden-item">Юридические услуги</a>
+              <a href="" class="footer-hidden-item">Юридические услуги</a>
+              <a href="" class="footer-hidden-item">Юридические услуги</a>
+              <a href="" class="footer-hidden-item">Юридические услуги</a>
+            </div>
+          </div>
+          <div class="footer-menu-coll second">
+            <a href="" class="footer-menu-item">Обо мне</a>
+            <a href="" class="footer-menu-item">Отзывы</a>
+            <a href="" class="footer-menu-item">Вопросы и ответы</a>
+            <a href="" class="footer-menu-item">Калькулятор</a>
+          </div>
+        </div>
+        <div class="footer-menu-polityc desk">
+          <a href="" class="footer-polityc">Политика конфиденциальности</a>
+          <a class="footer-copyr"><span>©</span> 2023 Все права защищены</a>
+          <a href="" class="footer-razrab">Разработано <span>Chagovets Studio</span></a>
+        </div>
+      </div>
+      <div class="footer-hidden desk">
+        <div class="footer-hidden-list">
+          <a href="" class="footer-hidden-item">Автосервисы</a>
+          <a href="" class="footer-hidden-item">Медицинские сайты</a>
+          <a href="" class="footer-hidden-item">Медицинские сайты</a>
+          <a href="" class="footer-hidden-item">Медицинские сайты</a>
+          <a href="" class="footer-hidden-item">Автозапчасти</a>
+          <a href="" class="footer-hidden-item">Автозапчасти</a>
+          <a href="" class="footer-hidden-item">Автозапчасти</a>
+          <a href="" class="footer-hidden-item">Бухгалтерские услуги</a>
+          <a href="" class="footer-hidden-item">Бухгалтерские услуги</a>
+          <a href="" class="footer-hidden-item">Бухгалтерские услуги</a>
+          <a href="" class="footer-hidden-item">Мебель</a>
+          <a href="" class="footer-hidden-item">Мебель</a>
+          <a href="" class="footer-hidden-item">Мебель</a>
+          <a href="" class="footer-hidden-item">Юридические услуги</a>
+          <a href="" class="footer-hidden-item">Юридические услуги</a>
+          <a href="" class="footer-hidden-item">Юридические услуги</a>
+          <a href="" class="footer-hidden-item">Юридические услуги</a>
+        </div>
+      </div>
+      <div class="footer-menu-polityc mob">
+        <a href="" class="footer-polityc">Политика конфиденциальности</a>
+        <a class="footer-copyr"><span>©</span> 2023 Все права защищены</a>
+        <a href="" class="footer-razrab">Разработано <span>Chagovets Studio</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup form-popup">
+    <div class="form-popup-wrapper">
+      <div class="form-poopup-close">
+        <svg class="form-poopup-close-svg" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="44.5626" height="4.45626" rx="2.22813"
+            transform="matrix(0.710092 -0.704109 0.710092 0.704109 5 35.8789)" fill="white" />
+          <rect width="44.5626" height="4.45626" rx="2.22813"
+            transform="matrix(0.710092 0.704109 -0.710092 0.704109 8.35645 4.98438)" fill="white" />
+        </svg>
+      </div>
+      <div class="form-popup-info">
+        <p class="form-popup-heading">Получите аудит и расчёт стоимости продвижения </p>
+        <p class="Text_18 form-popup-text">Оставьте номер телефона и адрес сайта. В течение дня мы подготовим вам аудит
+          сайта и расчёт стоимости.</p>
+        <div class="form-popup-form">
+          <input type="text" class="form-popup-inp" placeholder="Телефон">
+          <input type="text" class="form-popup-inp" placeholder="Адрес вашего сайта">
+          <div class="ya-rev-form-policy">
+            <input checked type="checkbox" name="" id="form-popup-policy" class="ya-rev-policy-checkbox">
+            <label for="form-popup-policy" class="ya-form-checkbox-visual">
+              <svg class="ya-form-checkbox-visual-svg" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.4419 3.80806C13.686 4.05214 13.686 4.44786 13.4419 4.69194L6.56694 11.5669C6.32286 11.811 5.92714 11.811 5.68306 11.5669L2.55806 8.44194C2.31398 8.19786 2.31398 7.80214 2.55806 7.55806C2.80214 7.31398 3.19786 7.31398 3.44194 7.55806L6.125 10.2411L12.5581 3.80806C12.8021 3.56398 13.1979 3.56398 13.4419 3.80806Z"
+                  fill="#FAFAFA" />
+              </svg>
+            </label>
+            <p class="ya-rev-form-checkbox-text Text_14">Согласен(а) c политикой конфиденциальности и обработкой
+              персональных данных</p>
+          </div>
+          <button class="button form-popup-button">
+            Получить расчёт
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="closeAllPopups"></div>
+  <div class="paterns" style="display: none;">
+    <div class="Text_14">Пример текста</div>
+    <div class="Text_16">Пример текста</div>
+    <div class="Text_18">Пример текста</div>
+    <div class="Text_20">Пример текста</div>
+    <div class="Text_24">Пример текста</div>
+    <div class="Big_Text">Подзаголовок</div>
+    <div class="h3">Заголовок 3</div>
+    <div class="h2">Заголовок 2</div>
+    <div class="h1">Заголовок</div>
+
+    <div class="Text_14_tablet">Пример текста</div>
+    <div class="Text_16_tablet">Пример текста</div>
+    <div class="Text_18_tablet">Пример текста</div>
+    <div class="Text_20_tablet">Пример текста</div>
+    <div class="Text_24_tablet">Пример текста</div>
+    <div class="Big_Text_tablet">Подзаголовок</div>
+    <div class="h3_tablet">Заголовок 3</div>
+    <div class="h2_tablet">Заголовок 2</div>
+    <div class="h1_tablet">Заголовок</div>
+
+    <div class="Text_10_mobile">Пример текста</div>
+    <div class="Text_14_mobile">Пример текста</div>
+    <div class="Text_16_mobile">Пример текста</div>
+    <div class="Big_Text_mobile">Подзаголовок</div>
+    <div class="h3_mobile">Заголовок 3</div>
+    <div class="h2_mobile">Заголовок 2</div>
+    <div class="h1_mobile">Заголовок</div>
+
+    <button class="button">
+      Заказать аудит бесплатно
+      <svg class="button_svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M28.0613 17.0624L19.0613 26.0624C18.7795 26.3442 18.3973 26.5025 17.9988 26.5025C17.6002 26.5025 17.218 26.3442 16.9363 26.0624C16.6545 25.7807 16.4961 25.3985 16.4961 24.9999C16.4961 24.6014 16.6545 24.2192 16.9363 23.9374L23.375 17.5012H5C4.60218 17.5012 4.22064 17.3432 3.93934 17.0619C3.65804 16.7806 3.5 16.399 3.5 16.0012C3.5 15.6034 3.65804 15.2218 3.93934 14.9405C4.22064 14.6592 4.60218 14.5012 5 14.5012H23.375L16.9387 8.0612C16.657 7.7794 16.4986 7.39721 16.4986 6.9987C16.4986 6.60018 16.657 6.21799 16.9387 5.9362C17.2205 5.6544 17.6027 5.49609 18.0012 5.49609C18.3998 5.49609 18.782 5.6544 19.0637 5.9362L28.0637 14.9362C28.2036 15.0757 28.3145 15.2415 28.3901 15.4241C28.4657 15.6066 28.5045 15.8023 28.5043 15.9998C28.5041 16.1974 28.4648 16.393 28.3888 16.5753C28.3128 16.7577 28.2014 16.9232 28.0613 17.0624Z"
+          fill="#292929" />
+      </svg>
+    </button>
+    <button class="button_mobile">
+      Заказать аудит бесплатно
+      <svg class="button_svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M28.0613 17.0624L19.0613 26.0624C18.7795 26.3442 18.3973 26.5025 17.9988 26.5025C17.6002 26.5025 17.218 26.3442 16.9363 26.0624C16.6545 25.7807 16.4961 25.3985 16.4961 24.9999C16.4961 24.6014 16.6545 24.2192 16.9363 23.9374L23.375 17.5012H5C4.60218 17.5012 4.22064 17.3432 3.93934 17.0619C3.65804 16.7806 3.5 16.399 3.5 16.0012C3.5 15.6034 3.65804 15.2218 3.93934 14.9405C4.22064 14.6592 4.60218 14.5012 5 14.5012H23.375L16.9387 8.0612C16.657 7.7794 16.4986 7.39721 16.4986 6.9987C16.4986 6.60018 16.657 6.21799 16.9387 5.9362C17.2205 5.6544 17.6027 5.49609 18.0012 5.49609C18.3998 5.49609 18.782 5.6544 19.0637 5.9362L28.0637 14.9362C28.2036 15.0757 28.3145 15.2415 28.3901 15.4241C28.4657 15.6066 28.5045 15.8023 28.5043 15.9998C28.5041 16.1974 28.4648 16.393 28.3888 16.5753C28.3128 16.7577 28.2014 16.9232 28.0613 17.0624Z"
+          fill="#292929" />
+      </svg>
+    </button>
+  </div>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
